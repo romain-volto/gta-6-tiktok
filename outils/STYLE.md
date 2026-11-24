@@ -64,3 +64,35 @@ Romain veut que **chaque** titre et **chaque** description soient optimisés pou
 **Slides**
 - La slide 1 affiche le mot-clé exact en gros (« CODES DE TRICHE GTA 6 », « ARGENT FACILE »), car TikTok lit aussi le texte des images.
 - Recherches qui amènent déjà des vues au compte (TikTok Studio, 24/11) : « braquage gta 6 », « phamas chap 2 gta », « bf bandito gta6 ». Les privilégier comme sujets et mots-clés.
+
+## Méthode virale (à appliquer à chaque post)
+
+Ce qui compte pour TikTok en 2026, dans l'ordre : temps passé et taux de complétion (pour un carrousel, le % qui swipe après la slide 1, puis le % qui va jusqu'au bout), puis **partages en message privé** et **enregistrements**, puis commentaires, puis j'aime. La vitesse des réactions dans la première heure décide si le post est poussé plus loin.
+
+**Slide 1 = 80 % du résultat**
+- Nommer le sujet tout de suite (mot-clé en gros) ET ouvrir une question sans y répondre.
+- Un chiffre précis plutôt que rond (« 2 140 $ », « 61 codes », « 7 secondes »).
+- Formules qui marchent : « Personne n'y pense : … », « Rockstar a caché … », « Ne fais pas … avant d'avoir vu ça », « Le secret à +2 000 $ que 95 % des joueurs ratent », « J'ai trouvé … à Key Lento », « Si tu as raté ça, recommence ta partie ».
+- La pastille blanche annonce la récompense et sa slide (« LE CODE ARGENT EN SLIDE 4 »).
+
+**Slides 2 et suivantes**
+- La slide 2 relance (petit suspense ou première info choc), pas une intro molle.
+- Au milieu, une relance avec le champ `teaser` (« Le meilleur arrive en slide 5 »).
+- Une idée par slide, 3 ou 4 lignes maximum, mots clés en `<b>`. 5 à 8 slides au total.
+
+**Slide finale**
+- `share` : une phrase qui pousse à envoyer le post à quelqu'un de précis (« Envoie-le à ton pote qui est encore à Key Lento »). C'est le signal le plus fort.
+- `comment` : une question facile ou qui divise (« Jason ou Lucia ? », « Tu l'avais trouvé ? Réponds oui ou non »), car les posts photo reçoivent beaucoup de commentaires.
+
+**Description**
+- La première ligne est visible avant « plus » : elle doit accrocher ET contenir le mot-clé dans les 50 premiers caractères.
+
+**Mélange des 3 posts du jour**
+- 1 post « utile à garder » (argent, braquage, codes, emplacements) : vise les enregistrements.
+- 1 post « découverte à partager » (secret, easter egg, détail fou du jeu, voiture rare) : vise les partages.
+- 1 post « réaction » (mème, situation que tous les joueurs vivent, Jason et Lucia, classement ou « top 5 ») : vise les commentaires. Ça reste en carrousel néon, avec la même charte.
+- Séries numérotées quand un sujet marche (« Braquage n°2 », « Secret n°3 ») : ça fait visiter le profil.
+
+**Inspiration**
+- Les plus gros comptes GTA 6 postent des découvertes à la première personne (« J'ai volé la voiture de Paul Walker dans GTA 6 », « J'ai trouvé un ours polaire ») et des « pro tips » très courts. Reprendre ce ton dans les accroches, en français.
+- Suivre ce qui buzze sur GTA 6 (presse jeu vidéo, YouTube, X, TikTok) et réagir dans les 24 à 48 h.

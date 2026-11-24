@@ -68,6 +68,8 @@ b,strong{{color:{TEAL};font-weight:800}}
 .k svg{{width:62%;height:62%}}
 .codes{{display:flex;flex-wrap:wrap;align-items:center;margin-top:10px}}
 .big .k{{width:92px;height:92px;border-radius:18px;margin:6px}}
+.teaser{{position:absolute;z-index:6;left:90px;right:90px;top:1440px;display:flex;justify-content:flex-end}}
+.teaser span{{display:inline-flex;align-items:center;gap:12px;background:{PINK};color:#fff;font-family:Anton;font-size:40px;letter-spacing:1px;padding:12px 26px 10px;border-radius:999px;box-shadow:0 0 30px rgba(255,61,139,.6)}}
 .dots{{position:absolute;z-index:6;left:90px;top:1545px;display:flex;gap:12px}}
 .dot{{height:12px;border-radius:6px;background:rgba(255,255,255,.22)}}
 .dot.on{{background:{YEL};box-shadow:0 0 14px {YEL}}}
@@ -153,6 +155,15 @@ def visual_html(v, base):
         return f'<div style="margin:60px auto 0;width:320px;height:320px;border-radius:50%;background:rgba(14,5,36,.7);border:4px solid {TEAL};display:flex;align-items:center;justify-content:center;box-shadow:0 0 60px rgba(45,226,200,.5)">{svg(v.get("name","star"),200,"#fff")}</div>'
     return ""
 
+SHARE_ICON = ('<svg aria-hidden="true" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#14062E" stroke-width="2.4" '
+              'stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>')
+
+def share_html(s):
+    if not s.get("share"):
+        return ""
+    return (f'<div style="margin-top:30px;align-self:flex-start;display:flex;align-items:center;gap:18px;background:{YEL};color:#14062E;'
+            f'font-weight:800;font-size:38px;line-height:1.25;border-radius:24px;padding:20px 30px;box-shadow:6px 6px 0 {PINK}">{SHARE_ICON}<span>{s["share"]}</span></div>')
+
 def body(s, base):
     t = s.get("type", "steps")
     if t == "hook":
@@ -170,7 +181,7 @@ def body(s, base):
 <div class="pac" style="margin-top:90px;font-size:78px">{s.get("pac","Ça t'a aidé ?")}</div>
 <div style="margin-top:40px;font-family:Anton;font-size:150px;line-height:.95;text-transform:uppercase;text-shadow:8px 8px 0 {PINK}">Enregistre<br><span class="y" style="text-shadow:8px 8px 0 #7A1F7A">et partage</span></div>
 <div style="margin-top:36px;align-self:flex-start;font-size:42px;line-height:1.35;font-weight:600;background:rgba(14,5,36,.82);border:2px solid rgba(255,255,255,.16);border-radius:28px;padding:24px 34px">{s.get("comment","Dis-moi en commentaire quel secret<br>tu veux voir ensuite.")}</div>
-<div style="margin-top:50px;display:flex"><span style="display:flex;align-items:center;gap:22px;background:#FF3B5C;color:#fff;font-weight:800;font-size:54px;padding:22px 52px 22px 26px;border-radius:999px;box-shadow:0 16px 50px rgba(255,59,92,.55)"><span style="width:72px;height:72px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#FF3B5C" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>S'abonner</span></div>"""
+{share_html(s)}<div style="margin-top:44px;display:flex"><span style="display:flex;align-items:center;gap:22px;background:#FF3B5C;color:#fff;font-weight:800;font-size:54px;padding:22px 52px 22px 26px;border-radius:999px;box-shadow:0 16px 50px rgba(255,59,92,.55)"><span style="width:72px;height:72px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#FF3B5C" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>S'abonner</span></div>"""
     out = header(s)
     if s.get("intro"):
         out += f'<p class="body" style="margin:26px 0 0">{s["intro"]}</p>'
@@ -223,21 +234,26 @@ def dots(n, total):
     return '<div class="dots" aria-hidden="true">' + "".join(
         f'<div class="dot{" on" if i < n else ""}" style="width:{w}px"></div>' for i in range(total)) + '</div>'
 
+TEASER_ARROW = ('<svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" '
+                'stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg>')
+
 def page(s, n, total, base):
+    teaser = f'<div class="teaser"><span>{s["teaser"]}{TEASER_ARROW}</span></div>' if s.get("teaser") else ""
     return (f'<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Slide {n}</title><style>{CSS}</style></head>'
-            f'<body><div class="slide">{SCENE}<div class="content">{keycaps(body(s, base))}</div>{dots(n, total)}</div></body></html>')
+            f'<body><div class="slide">{SCENE}<div class="content">{keycaps(body(s, base))}</div>{teaser}{dots(n, total)}</div></body></html>')
 
 FIT_JS = """() => {
   const out = {shrunk:0};
   document.querySelectorAll('h2.fit').forEach(h => { let f = parseFloat(getComputedStyle(h).fontSize);
     while ((h.scrollWidth > 900) && f > 60) { f -= 2; h.style.fontSize = f + 'px'; } });
   const bottom = () => { let m = 0; document.querySelectorAll('.content *').forEach(e => { const r = e.getBoundingClientRect(); if (r.bottom > m) m = r.bottom; }); return m; };
+  const limit = document.querySelector('.teaser') ? 1420 : %d;
   let guard = 0;
-  while (bottom() > %d && guard < 14) {
+  while (bottom() > limit && guard < 14) {
     document.querySelectorAll('.st,.body,.warn,.rl div,.rl small').forEach(e => { const f = parseFloat(getComputedStyle(e).fontSize); e.style.fontSize = Math.max(26, f - 2) + 'px'; });
     document.querySelectorAll('.card').forEach(e => { e.style.gap = '20px'; e.style.padding = '30px 36px'; });
     guard++; out.shrunk = guard; }
-  out.bottom = Math.round(bottom());
+  out.bottom = Math.round(bottom()); out.limit = limit;
   let right = 0; document.querySelectorAll('.content *').forEach(e => { const r = e.getBoundingClientRect(); if (r.right > right) right = r.right; });
   out.right = Math.round(right);
   return out; }""" % SAFE_BOTTOM
@@ -266,7 +282,7 @@ def render(spec_path):
             f.write_text(page(s, i, total, base))
             pg.goto(f.as_uri()); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(400)
             r = pg.evaluate(FIT_JS); pg.wait_for_timeout(100)
-            if r["bottom"] > SAFE_BOTTOM or r["right"] > 1000:
+            if r["bottom"] > r["limit"] or r["right"] > 1000:
                 problems.append((i, r))
             png = tmp / f"s{i}.png"
             pg.screenshot(path=str(png))
