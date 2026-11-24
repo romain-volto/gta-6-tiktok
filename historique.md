@@ -34,4 +34,4 @@ Ajouter une ligne à chaque post créé : date, heure, dossier, sujet, statut.
 | 2026-12-01 | 15:00 | posts/2026-12-01-karin-toyota-partie-1 | Karin = Toyota, partie 1 : Corolla GR, GR GT, Corolla GR berline | programmé |
 | 2026-12-02 | 15:00 | posts/2026-12-02-karin-toyota-partie-2 | Karin = Toyota, partie 2 : Land Cruiser 250, Tacoma, Land Cruiser GR, Fortuner | programmé |
 | 2026-12-03 | 15:00 | posts/2026-12-03-karin-toyota-partie-3 | Karin = Toyota, partie 3 : Corolla 2004, Camry 2004, Previa | programmé |
-| 2026-11-25 | 10:00 | posts/2026-11-25-furries-arme-et-argent | Furries (Chase le renard) : prendre la SMG puis récupérer aussi les 15 000 $ (testé par Romain) | brouillon, attend le oui de Romain, compte dans les 3 posts du jour |
+| 2026-11-25 | 10:00 | posts/2026-11-25-furries-arme-et-argent | Furries (Chase le renard) : prendre la SMG puis récupérer aussi les 15 000 $ (testé par Romain) | programmé (validé par Romain), compte dans les 3 posts du jour |
