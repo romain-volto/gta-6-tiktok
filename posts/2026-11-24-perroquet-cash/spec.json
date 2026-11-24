@@ -1,0 +1,26 @@
+{
+  "sujet": "Le perroquet qui révèle une cachette d'argent (Three Sheets, Key Lento)",
+  "slides": [
+    {"type": "hook", "sticker": "ARGENT FACILE", "pac": "Personne ne l'écoute",
+     "title": "Ce perroquet<br>cache <span class='y'>+2 000 $</span>",
+     "visual": {"kind": "ring", "small": "Où est le cash ?", "big": "$$$", "big_size": 170},
+     "pill": "ÇA SE PASSE À KEY LENTO"},
+    {"type": "steps", "sticker": "ÉTAPE 1/3", "pac": "Rends service à ta voisine", "title": "Shirley", "place": "Près de chez Jason · Key Lento",
+     "steps": ["Shirley, ta voisine, habite <b>à deux pas de la maison de Jason</b>.",
+               "Accepte sa petite course : elle t'envoie au magasin d'alcool <b>Three Sheets</b>.",
+               "Sur place, tu entends <b>des cris de perroquet</b> derrière la boutique."],
+     "warn": {"label": "ASTUCE", "text": "Entre <b>le plus discrètement possible</b> : ça se finit en bagarre."}},
+    {"type": "steps", "sticker": "ÉTAPE 2/3", "pac": "Fais-le parler", "title": "Le perroquet",
+     "steps": ["Sors à l'arrière et <b>élimine les gardes</b> autour des cages.",
+               "Parle au perroquet rouge et bleu jusqu'à pouvoir choisir <b>« Where's the cash? »</b>.",
+               "Il t'indique <b>le générateur</b>, dans le coin de la cour."]},
+    {"type": "rewards", "sticker": "ÉTAPE 3/3", "pac": "Récupère tout", "title": "Le butin",
+     "steps": ["Ouvre <b>la grille</b> du mur à côté du générateur.",
+               "Fouille aussi <b>le coffre</b> et la machine de la boutique.",
+               "Dépose l'argent vite : <b>il est perdu si tu meurs</b>."],
+     "rewards": [{"icon": "cash", "title": "~1 300 $", "text": "Grille du générateur"},
+                 {"icon": "key", "title": "~900 $", "text": "Le coffre"},
+                 {"icon": "trophy", "title": "+2 000 $", "text": "Au total"}]},
+    {"type": "cta", "pac": "Tu l'avais trouvé ?", "comment": "Dis-moi en commentaire combien<br>tu as récupéré."}
+  ]
+}
