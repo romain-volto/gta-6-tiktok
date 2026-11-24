@@ -25,5 +25,9 @@ Ajouter une ligne à chaque post créé : date, heure, dossier, sujet, statut.
 | Date | Heure | Dossier | Sujet | Statut |
 |---|---|---|---|---|
 | 2026-11-24 | 18:00 | posts/2026-11-24-portail-vice-city | Portail secret vers Vice City, chemise de Tommy Vercetti | programmé |
-| 2026-11-24 | 12:00 | posts/2026-11-24-perroquet-cash | Le perroquet de Three Sheets qui révèle +2 000 $ | programmé |
-| 2026-11-24 | 11:05 | posts/2026-11-24-codes-triche | Codes de triche GTA 6 : code argent 250 000 $, armes, gilet, véhicules (bonus test) | programmé |
+| 2026-11-24 | 12:00 | posts/2026-11-24-perroquet-cash | Le perroquet de Three Sheets qui révèle +2 000 $ | publié |
+| 2026-11-24 | 11:00 | posts/2026-11-24-codes-triche | Codes de triche GTA 6 : code argent 250 000 $, armes, gilet, véhicules (bonus test) | publié |
+| 2026-11-24 | 15:00 | posts/2026-11-24-gta6-vs-vraie-vie | GTA 6 vs vraie vie : BMW X5, Porsche 911, Mercedes GLS, Dodge Durango | programmé |
+| 2026-11-24 | 20:00 | posts/2026-11-24-bf-volkswagen-partie-1 | BF = Volkswagen, partie 1 : Golf MK8, Golf MK4, Coccinelle | programmé |
+| 2026-11-25 | 15:00 | posts/2026-11-25-bf-volkswagen-partie-2 | BF = Volkswagen, partie 2 : Passat, Bora, Santana | programmé |
+| 2026-11-26 | 15:00 | posts/2026-11-26-bf-volkswagen-partie-3 | BF = Volkswagen, partie 3 : Passat Break, Transporter, Gol | programmé |
