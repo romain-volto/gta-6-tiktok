@@ -31,3 +31,6 @@ Ajouter une ligne à chaque post créé : date, heure, dossier, sujet, statut.
 | 2026-11-24 | 20:00 | posts/2026-11-24-bf-volkswagen-partie-1 | BF = Volkswagen, partie 1 : Golf MK8, Golf MK4, Coccinelle | programmé |
 | 2026-11-25 | 15:00 | posts/2026-11-25-bf-volkswagen-partie-2 | BF = Volkswagen, partie 2 : Passat, Bora, Santana | programmé |
 | 2026-11-26 | 15:00 | posts/2026-11-26-bf-volkswagen-partie-3 | BF = Volkswagen, partie 3 : Passat Break, Transporter, Gol | programmé |
+| 2026-12-01 | 15:00 | posts/2026-12-01-karin-toyota-partie-1 | Karin = Toyota, partie 1 : Corolla GR, GR GT, Corolla GR berline | programmé |
+| 2026-12-02 | 15:00 | posts/2026-12-02-karin-toyota-partie-2 | Karin = Toyota, partie 2 : Land Cruiser 250, Tacoma, Land Cruiser GR, Fortuner | programmé |
+| 2026-12-03 | 15:00 | posts/2026-12-03-karin-toyota-partie-3 | Karin = Toyota, partie 3 : Corolla 2004, Camry 2004, Previa | programmé |

@@ -40,6 +40,7 @@ Rendu : `python3 outils/neon.py posts/<dossier>/spec.json`, puis vérifier `/tmp
 ## Publication (Metricool)
 
 - Heures : **10 h, 12 h et 18 h** (heure de Paris).
+- **Maximum 3 posts par jour au total**, séries comprises. Avant de créer les posts du jour, compter dans historique.md les posts déjà programmés ce jour-là (ex. une partie de série à 15 h) et ne créer que ce qui reste pour arriver à 3. Avec une série à 15 h : seulement 10 h et 18 h. Au-delà de 3 par jour, l'engagement par post baisse.
 - Images : liens publics `https://raw.githubusercontent.com/romain-volto/gta-6-tiktok/medias/posts/<dossier>/slide-XX.jpg`.
 - Titre et description : suivre **obligatoirement** la section « Référencement » ci-dessous.
 - `autoAddMusic` : true. Confidentialité : publique.
