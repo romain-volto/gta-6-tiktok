@@ -16,7 +16,7 @@
                "Maintiens <b>L1</b> (LB sur Xbox) et appuie sur <b>R1</b> (RB).",
                "Tape <b>la suite de flèches</b> du code avec la croix directionnelle."]},
     {"type": "custom", "sticker": "LE CODE ARGENT", "pac": "Le seul du jeu", "title": "+250 000 $",
-     "html": "<div class='card big' style='align-items:center;text-align:center;margin-top:40px'><div class='codes' style='justify-content:center'>↑ → ↓ ←</div><div class='codes' style='justify-content:center;margin-top:0'>↑ ← ↓ →</div><p class='body' style='font-size:38px'>Débloqué dès <b>la fin de l'histoire</b>. Le premier code d'argent dans un GTA depuis <b>San Andreas</b>.</p></div>"},
+     "html": "<div class='card big' style='align-items:center;text-align:center;margin-top:40px'><div class='codes' style='justify-content:center'>↑ → ↓ ←</div><div class='codes' style='justify-content:center;margin-top:0'>↑ ← ↓ →</div><p class='body' style='font-size:38px'>Débloqué dès <b>la fin de l'histoire</b>. Le premier code d'argent d'un GTA principal depuis <b>San Andreas</b>.</p></div>"},
     {"type": "rows", "sticker": "ARMES", "pac": "Au stand de tir", "title": "Munitions",
      "rows": [{"n": "1", "title": "Munitions max", "text": "25 médailles de bronze<span class='codes'>↓ ↑ → ↓ ← ← ↑ ↑ ↓ ←</span>"},
               {"n": "2", "title": "Munitions infinies", "text": "25 médailles d'argent<span class='codes'>↓ ↑ → ↓ ← ← ↑ ↓ ↓ ↓</span>"},
