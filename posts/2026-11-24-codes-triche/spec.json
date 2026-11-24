@@ -1,0 +1,30 @@
+{
+  "sujet": "Codes de triche GTA 6 : code argent 250 000 $, armes, gilet, véhicules (PS5 et Xbox)",
+  "slides": [
+    {"type": "hook", "sticker": "CODES DE TRICHE", "pac": "Le code argent est de retour",
+     "title": "Codes de triche<br>GTA 6 : <span class='y'>250 000 $</span>",
+     "title_size": 130,
+     "visual": {"kind": "bignum", "num": "61", "text": "codes<br>cachés", "text_size": 110},
+     "pill": "LE CODE ARGENT EN SLIDE 4"},
+    {"type": "steps", "sticker": "ÉTAPE 1/2", "pac": "Avant tout", "title": "Les débloquer",
+     "steps": ["Termine <b>l'histoire principale</b> : la liste apparaît dans <b>Progression &gt; Codes de triche</b>.",
+               "4 codes sont actifs dès la fin, dont <b>les 250 000 $</b>.",
+               "Les autres se débloquent avec <b>un défi chacun</b> (stand de tir, entraînements, courses…)."],
+     "warn": {"label": "ATTENTION", "text": "Un code actif <b>désactive les trophées et la sauvegarde</b> pour la session."}},
+    {"type": "steps", "sticker": "ÉTAPE 2/2", "pac": "Sur PS5 et Xbox", "title": "Les activer",
+     "steps": ["Appuie sur <b>la flèche du haut</b> pour sortir le téléphone.",
+               "Maintiens <b>L1</b> (LB sur Xbox) et appuie sur <b>R1</b> (RB).",
+               "Tape <b>la suite de flèches</b> du code avec la croix directionnelle."]},
+    {"type": "custom", "sticker": "LE CODE ARGENT", "pac": "Le seul du jeu", "title": "+250 000 $",
+     "html": "<div class='card big' style='align-items:center;text-align:center;margin-top:40px'><div class='codes' style='justify-content:center'>↑ → ↓ ←</div><div class='codes' style='justify-content:center;margin-top:0'>↑ ← ↓ →</div><p class='body' style='font-size:38px'>Débloqué dès <b>la fin de l'histoire</b>. Le premier code d'argent dans un GTA depuis <b>San Andreas</b>.</p></div>"},
+    {"type": "rows", "sticker": "ARMES", "pac": "Au stand de tir", "title": "Munitions",
+     "rows": [{"n": "1", "title": "Munitions max", "text": "25 médailles de bronze<span class='codes'>↓ ↑ → ↓ ← ← ↑ ↑ ↓ ←</span>"},
+              {"n": "2", "title": "Munitions infinies", "text": "25 médailles d'argent<span class='codes'>↓ ↑ → ↓ ← ← ↑ ↓ ↓ ↓</span>"},
+              {"n": "3", "title": "Sans rechargement", "text": "25 médailles d'or<span class='codes'>↓ ↑ → ↓ ← ← ↑ ↓ ↓ ↑</span>"}]},
+    {"type": "rows", "sticker": "BONUS", "pac": "Survie et véhicules", "title": "Encore plus",
+     "rows": [{"n": "1", "title": "Gilet pare-balles", "text": "Défi d'entraînements<span class='codes'>↓ ↑ ← ↑ ↑ ↑ ↑ ↑ ↓ ↓</span>"},
+              {"n": "2", "title": "Bulldozer", "text": "<span class='codes'>← ↑ → ↓ ← → → ↓</span>"},
+              {"n": "3", "title": "Camion de pompiers", "text": "<span class='codes'>← ↑ → ↓ ← → → ↑</span>"}]},
+    {"type": "cta", "pac": "Tu as fini l'histoire ?", "comment": "Dis-moi en commentaire quel code<br>tu testes en premier."}
+  ]
+}

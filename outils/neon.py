@@ -64,6 +64,10 @@ b,strong{{color:{TEAL};font-weight:800}}
 .photo img{{width:100%;height:100%;object-fit:cover;display:block}}
 .pill{{display:flex;align-items:center;gap:18px;background:#fff;color:#14062E;font-family:Anton;font-size:46px;letter-spacing:1px;padding:18px 34px 16px;border-radius:999px;box-shadow:0 0 40px rgba(255,255,255,.35)}}
 .bubble{{display:inline-block;background:#2A1650;border-radius:30px 30px 30px 8px;padding:22px 32px;font-family:Anton;font-size:60px;letter-spacing:2px;color:#fff}}
+.k{{display:inline-flex;width:50px;height:50px;border-radius:12px;background:{TEAL};align-items:center;justify-content:center;margin:3px 3px;vertical-align:middle;box-shadow:0 4px 0 #128f80}}
+.k svg{{width:62%;height:62%}}
+.codes{{display:flex;flex-wrap:wrap;align-items:center;margin-top:10px}}
+.big .k{{width:92px;height:92px;border-radius:18px;margin:6px}}
 .dots{{position:absolute;z-index:6;left:90px;top:1545px;display:flex;gap:12px}}
 .dot{{height:12px;border-radius:6px;background:rgba(255,255,255,.22)}}
 .dot.on{{background:{YEL};box-shadow:0 0 14px {YEL}}}
@@ -202,6 +206,18 @@ def body(s, base):
         out += s.get("html", "")
     return out
 
+ARROW_ROT = {"↑": 0, "→": 90, "↓": 180, "←": 270}
+def keycaps(html):
+    """Remplace les flèches ↑ → ↓ ← par des touches de croix directionnelle dessinées."""
+    out = []
+    for ch in html:
+        if ch in ARROW_ROT:
+            out.append(f'<span class="k" aria-label="{ch}"><svg viewBox="0 0 24 24" style="transform:rotate({ARROW_ROT[ch]}deg)">'
+                       '<path d="M12 3 4 13h5v8h6v-8h5z" fill="#14062E"/></svg></span>')
+        else:
+            out.append(ch)
+    return "".join(out)
+
 def dots(n, total):
     w = (900 - 12 * (total - 1)) // total
     return '<div class="dots" aria-hidden="true">' + "".join(
@@ -209,7 +225,7 @@ def dots(n, total):
 
 def page(s, n, total, base):
     return (f'<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Slide {n}</title><style>{CSS}</style></head>'
-            f'<body><div class="slide">{SCENE}<div class="content">{body(s, base)}</div>{dots(n, total)}</div></body></html>')
+            f'<body><div class="slide">{SCENE}<div class="content">{keycaps(body(s, base))}</div>{dots(n, total)}</div></body></html>')
 
 FIT_JS = """() => {
   const out = {shrunk:0};
