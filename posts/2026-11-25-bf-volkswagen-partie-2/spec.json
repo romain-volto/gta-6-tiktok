@@ -1,0 +1,75 @@
+{
+ "sujet": "La marque BF de GTA = Volkswagen : modèles qu'on veut dans GTA 6 (Partie 2 : les berlines)",
+ "slides": [
+  {
+   "type": "hook",
+   "sticker": "BF = VOLKSWAGEN",
+   "pac": "Partie 2 : les berlines",
+   "title": "Les Volkswagen<br>qu'on veut dans<br><span class='y'>GTA 6</span>",
+   "title_size": 124,
+   "visual": {
+    "kind": "image",
+    "src": "img/g_waffe.jpg",
+    "height": 470
+   },
+   "pill": "LA MARQUE BF, C'EST VW"
+  },
+  {
+   "type": "versus",
+   "sticker": "MODÈLE 1/3",
+   "pac": "Version GTA de la",
+   "title": "Passat",
+   "chip": "SON NOM DANS GTA : BF WAFFE",
+   "photos": [
+    {
+     "src": "img/g_waffe.jpg",
+     "label": "VERSION GTA"
+    },
+    {
+     "src": "img/r_waffe.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "versus",
+   "sticker": "MODÈLE 2/3",
+   "pac": "Version GTA de la",
+   "title": "Bora",
+   "chip": "SON NOM DANS GTA : BF VORA",
+   "photos": [
+    {
+     "src": "img/g_vora.jpg",
+     "label": "VERSION GTA"
+    },
+    {
+     "src": "img/r_vora.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "versus",
+   "sticker": "MODÈLE 3/3",
+   "pac": "Version GTA de la",
+   "title": "Santana",
+   "chip": "SON NOM DANS GTA : BF REMIDOR",
+   "photos": [
+    {
+     "src": "img/g_remidor.jpg",
+     "label": "VERSION GTA"
+    },
+    {
+     "src": "img/r_remidor.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "pac": "Laquelle tu veux ?",
+   "comment": "Dis-moi en commentaire laquelle<br>tu veux dans GTA 6. Partie 3 demain.",
+   "share": "Envoie-le à ton pote<br>fan de Volkswagen"
+  }
+ ]
+}

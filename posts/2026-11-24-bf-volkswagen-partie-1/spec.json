@@ -1,0 +1,75 @@
+{
+ "sujet": "La marque BF de GTA = Volkswagen : modèles qu'on veut dans GTA 6 (Partie 1 : les compactes)",
+ "slides": [
+  {
+   "type": "hook",
+   "sticker": "BF = VOLKSWAGEN",
+   "pac": "Partie 1 : les compactes",
+   "title": "Les Volkswagen<br>qu'on veut dans<br><span class='y'>GTA 6</span>",
+   "title_size": 124,
+   "visual": {
+    "kind": "image",
+    "src": "img/g_club8s.jpg",
+    "height": 470
+   },
+   "pill": "LA MARQUE BF, C'EST VW"
+  },
+  {
+   "type": "versus",
+   "sticker": "MODÈLE 1/3",
+   "pac": "Version GTA de la",
+   "title": "Golf MK8",
+   "chip": "SON NOM DANS GTA : BF CLUB 8S",
+   "photos": [
+    {
+     "src": "img/g_club8s.jpg",
+     "label": "VERSION GTA"
+    },
+    {
+     "src": "img/r_club8s.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "versus",
+   "sticker": "MODÈLE 2/3",
+   "pac": "Version GTA de la",
+   "title": "Golf MK4",
+   "chip": "SON NOM DANS GTA : BF CLUB 4 V6",
+   "photos": [
+    {
+     "src": "img/g_club4.jpg",
+     "label": "VERSION GTA"
+    },
+    {
+     "src": "img/r_club4.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "versus",
+   "sticker": "MODÈLE 3/3",
+   "pac": "Version GTA de la",
+   "title": "Coccinelle",
+   "chip": "SON NOM DANS GTA : BF NEW WEEVIL",
+   "photos": [
+    {
+     "src": "img/g_weevil.jpg",
+     "label": "VERSION GTA"
+    },
+    {
+     "src": "img/r_weevil.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "pac": "Laquelle tu veux ?",
+   "comment": "Dis-moi en commentaire laquelle<br>tu veux dans GTA 6. Partie 2 demain.",
+   "share": "Envoie-le à ton pote<br>fan de Volkswagen"
+  }
+ ]
+}

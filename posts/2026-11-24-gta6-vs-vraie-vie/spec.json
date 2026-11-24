@@ -1,0 +1,92 @@
+{
+ "sujet": "Voitures de GTA 6 et leur modèle réel : BMW X5, Porsche 911, Mercedes GLS, Dodge Durango",
+ "slides": [
+  {
+   "type": "hook",
+   "sticker": "GTA 6 VS VRAIE VIE",
+   "pac": "Rockstar a tout copié",
+   "title": "Ces voitures<br>de GTA 6 existent<br><span class='y'>en vrai</span>",
+   "title_size": 124,
+   "visual": {
+    "kind": "image",
+    "src": "img/g_porsche.jpg",
+    "height": 470
+   },
+   "pill": "DEVINE AVANT DE SWIPER"
+  },
+  {
+   "type": "versus",
+   "sticker": "VOITURE 1/4",
+   "pac": "Le double du",
+   "title": "BMW X5",
+   "chip": "LE SUV DE LUXE ALLEMAND",
+   "photos": [
+    {
+     "src": "img/g_bmw.jpg",
+     "label": "DANS GTA 6"
+    },
+    {
+     "src": "img/r_bmw.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "versus",
+   "sticker": "VOITURE 2/4",
+   "pac": "Le double de la",
+   "title": "Porsche 911",
+   "chip": "LA SPORTIVE CULTE",
+   "photos": [
+    {
+     "src": "img/g_porsche.jpg",
+     "label": "DANS GTA 6"
+    },
+    {
+     "src": "img/r_porsche.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "versus",
+   "sticker": "VOITURE 3/4",
+   "pac": "Le double du",
+   "title": "Mercedes GLS",
+   "chip": "LE SUV GÉANT DE MERCEDES",
+   "photos": [
+    {
+     "src": "img/g_mercedes.jpg",
+     "label": "DANS GTA 6"
+    },
+    {
+     "src": "img/r_mercedes.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "versus",
+   "sticker": "VOITURE 4/4",
+   "pac": "Le double du",
+   "title": "Dodge Durango",
+   "chip": "LE SUV MUSCLÉ AMÉRICAIN",
+   "photos": [
+    {
+     "src": "img/g_durango.jpg",
+     "label": "DANS GTA 6"
+    },
+    {
+     "src": "img/r_durango.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "pac": "Laquelle tu prends ?",
+   "comment": "Dis-moi en commentaire laquelle<br>tu conduis en premier.",
+   "share": "Envoie-le à ton pote<br>fan de voitures"
+  }
+ ]
+}

@@ -122,6 +122,9 @@ def header(s):
     if s.get("title"):
         cls = "fit wrap" if s.get("title_wrap") else "fit"
         out += f'<h2 class="{cls}" style="font-size:{s.get("title_size",120)}px">{s["title"]}</h2>'
+    if s.get("chip"):
+        out += (f'<div style="margin-top:14px;display:flex"><span style="font-size:30px;font-weight:800;letter-spacing:1px;'
+                f'color:#14062E;background:{TEAL};border-radius:12px;padding:8px 18px">{s["chip"]}</span></div>')
     if s.get("place"):
         out += f'<div style="margin-top:22px"><span class="place">{PIN}{s["place"]}</span></div>'
     return out
@@ -213,6 +216,16 @@ def body(s, base):
     elif t == "photo":
         if s.get("text"):
             out += f'<div class="card" style="margin-top:24px"><p class="body" style="font-size:36px">{s["text"]}</p></div>'
+    elif t == "versus":
+        h = s.get("photo_height", 450)
+        for i, ph in enumerate(s.get("photos", [])):
+            src = (base / ph["src"]).resolve().as_uri()
+            pink = i == 0
+            lab = (f'<span style="position:absolute;left:16px;top:16px;font-family:Anton;font-size:34px;letter-spacing:2px;'
+                   f'padding:8px 18px 6px;border-radius:12px;background:{PINK if pink else TEAL};color:{"#fff" if pink else "#14062E"};'
+                   f'box-shadow:0 4px 18px rgba(0,0,0,.45)">{ph.get("label","")}</span>')
+            out += (f'<div class="photo" style="position:relative;margin-top:{24 if i == 0 else 18}px;height:{h}px">'
+                    f'<img src="{src}" alt="" style="object-position:{ph.get("focus","center")}">{lab}</div>')
     elif t == "custom":
         out += s.get("html", "")
     return out
