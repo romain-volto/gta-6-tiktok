@@ -1,0 +1,75 @@
+{
+ "sujet": "La marque Karin de GTA = Toyota : modèles qu'on veut dans GTA 6 (Partie 3 : les classiques)",
+ "slides": [
+  {
+   "type": "hook",
+   "sticker": "KARIN = TOYOTA",
+   "pac": "Partie 3 : les classiques",
+   "title": "Les Toyota<br>qu'on veut dans<br><span class='y'>GTA 6</span>",
+   "title_size": 124,
+   "visual": {
+    "kind": "image",
+    "src": "img/g_colona.jpg",
+    "height": 470
+   },
+   "pill": "LA MARQUE KARIN, C'EST TOYOTA"
+  },
+  {
+   "type": "versus",
+   "sticker": "MODÈLE 1/3",
+   "pac": "Version GTA de la",
+   "title": "Corolla 2004",
+   "chip": "SON NOM DANS GTA : KARIN COLONA",
+   "photos": [
+    {
+     "src": "img/g_colona.jpg",
+     "label": "VERSION GTA"
+    },
+    {
+     "src": "img/r_colona.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "versus",
+   "sticker": "MODÈLE 2/3",
+   "pac": "Version GTA de la",
+   "title": "Camry 2004",
+   "chip": "SON NOM DANS GTA : KARIN ARIANT HG",
+   "photos": [
+    {
+     "src": "img/g_ariant.jpg",
+     "label": "VERSION GTA"
+    },
+    {
+     "src": "img/r_ariant.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "versus",
+   "sticker": "MODÈLE 3/3",
+   "pac": "Version GTA du",
+   "title": "Previa",
+   "chip": "SON NOM DANS GTA : KARIN ATLAS",
+   "photos": [
+    {
+     "src": "img/g_atlas.jpg",
+     "label": "VERSION GTA"
+    },
+    {
+     "src": "img/r_atlas.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "pac": "Laquelle tu veux ?",
+   "comment": "Dis-moi en commentaire quelle marque<br>tu veux pour la suite.",
+   "share": "Envoie-le à ton pote<br>fan de Toyota"
+  }
+ ]
+}
