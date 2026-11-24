@@ -20,6 +20,10 @@ Ajouter une ligne à chaque post créé : date, heure, dossier, sujet, statut.
 - Supercars de la vraie vie et leur copie dans GTA 6 (carrousel)
 - 14 voitures rares gratuites avec les emplacements (carrousel)
 
+## Réservés (ne pas traiter dans la tâche du jour)
+
+- Furries / Chase le renard (Operation Furball) : prendre la SMG puis tuer Chase pour récupérer aussi l'argent. Carrousel en préparation avec les captures de Romain.
+
 ## Posts programmés via Metricool
 
 | Date | Heure | Dossier | Sujet | Statut |
