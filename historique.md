@@ -25,4 +25,4 @@ Ajouter une ligne à chaque post créé : date, heure, dossier, sujet, statut.
 | Date | Heure | Dossier | Sujet | Statut |
 |---|---|---|---|---|
 | 2026-11-24 | 18:00 | posts/2026-11-24-portail-vice-city | Portail secret vers Vice City, chemise de Tommy Vercetti | programmé |
-| 2026-11-24 | — | posts/2026-11-24-perroquet-cash | Le perroquet de Three Sheets qui révèle +2 000 $ | prêt, pas encore programmé |
+| 2026-11-24 | 12:00 | posts/2026-11-24-perroquet-cash | Le perroquet de Three Sheets qui révèle +2 000 $ | brouillon |
