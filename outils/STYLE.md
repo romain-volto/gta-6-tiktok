@@ -71,8 +71,8 @@ Ce qui compte pour TikTok en 2026, dans l'ordre : temps passé et taux de compl�
 
 **Slide 1 = 80 % du résultat**
 - Nommer le sujet tout de suite (mot-clé en gros) ET ouvrir une question sans y répondre.
-- Un chiffre précis plutôt que rond (« 2 140 $ », « 61 codes », « 7 secondes »).
-- Formules qui marchent : « Personne n'y pense : … », « Rockstar a caché … », « Ne fais pas … avant d'avoir vu ça », « Le secret à +2 000 $ que 95 % des joueurs ratent », « J'ai trouvé … à Key Lento », « Si tu as raté ça, recommence ta partie ».
+- Un chiffre précis plutôt que rond (« 2 140 $ », « 61 codes », « 7 secondes »). **Jamais de chiffre inventé** : chaque chiffre vient des sources vérifiées.
+- Formules qui marchent : « Personne n'y pense : … », « Rockstar a caché … », « Ne fais pas … avant d'avoir vu ça », « Le secret à +2 000 $ caché à Key Lento », « J'ai trouvé … à Key Lento », « Si tu as raté ça, recommence ta partie ».
 - La pastille blanche annonce la récompense et sa slide (« LE CODE ARGENT EN SLIDE 4 »).
 
 **Slides 2 et suivantes**
