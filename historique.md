@@ -36,3 +36,4 @@ Ajouter une ligne à chaque post créé : date, heure, dossier, sujet, statut.
 | 2026-12-03 | 15:00 | posts/2026-12-03-karin-toyota-partie-3 | Karin = Toyota, partie 3 : Corolla 2004, Camry 2004, Previa | programmé |
 | 2026-11-25 | 10:00 | posts/2026-11-25-furries-arme-et-argent | Furries (Chase le renard) : prendre la SMG puis récupérer aussi les 15 000 $ (testé par Romain) | programmé (validé par Romain), compte dans les 3 posts du jour |
 | 2026-11-25 | 18:00 | posts/2026-11-25-glitch-argent-infini | Glitch argent infini : butin de la grange rouge à l'est de Hamlet qui réapparaît, revente Brian's Lockup (7700) ou Tyrone, jusqu'à +50 000 $ en 15 min | programmé (validé par Romain) |
+| 2026-11-26 | 18:00 | posts/2026-11-26-vice-city-2002-vs-2026 | Ocean Beach : GTA Vice City 2002 vs GTA 6 2026 (comparaison de Romain, mention TAS retirée) | programmé (demandé par Romain), compte dans les 3 posts du jour |
