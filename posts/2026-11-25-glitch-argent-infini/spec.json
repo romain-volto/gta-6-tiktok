@@ -1,0 +1,105 @@
+{
+  "sujet": "Glitch argent infini : le butin de l'entrepôt à l'est de Hamlet qui réapparaît (jusqu'à +50 000 $ en 15 min)",
+  "slides": [
+    {
+      "type": "hook",
+      "sticker": "GLITCH GTA 6",
+      "pac": "Fais-le avant le patch",
+      "title": "Argent infini<br><span class='y'>+50 000 $</span>",
+      "visual": {
+        "kind": "ring",
+        "small": "en seulement",
+        "big": "15 MIN",
+        "big_size": 170
+      },
+      "pill": "L'ENDROIT EXACT EN SLIDE 3"
+    },
+    {
+      "type": "rewards",
+      "sticker": "LE PRINCIPE",
+      "pac": "Simple et répétable",
+      "title": "Le butin revient",
+      "intro": "Dans un entrepôt près de Hamlet,<br>le butin <b>réapparaît à chaque fois</b>.<br>Tu prends, tu vends, <b>tu recommences</b>.",
+      "rewards_label": "CE QUE TU GAGNES",
+      "rewards": [
+        {
+          "icon": "cash",
+          "title": "8 640 $",
+          "text": "Par tour"
+        },
+        {
+          "icon": "clock",
+          "title": "15 min",
+          "text": "+50 000 $"
+        },
+        {
+          "icon": "key",
+          "title": "Chap. 1",
+          "text": "Dès le début"
+        }
+      ],
+      "teaser": "L'ENDROIT EXACT ARRIVE"
+    },
+    {
+      "type": "steps",
+      "sticker": "ÉTAPE 1/3",
+      "pac": "Va au bon endroit",
+      "title": "L'entrepôt",
+      "place": "À l'est de Hamlet · South Vice-Dale",
+      "steps": [
+        "Joue avec <b>Jason</b> et viens en voiture.",
+        "Va à <b>la grange rouge</b>, juste à l'est de <b>Hamlet</b>.",
+        "Remplis <b>4 sacs de butin</b> : le bureau et <b>le van</b> garé dedans.",
+        "Range les sacs <b>dans ton véhicule</b>."
+      ],
+      "warn": {
+        "label": "ASTUCE",
+        "text": "Prends <b>un van</b> : jusqu'à <b>10 places</b> au lieu de 4."
+      }
+    },
+    {
+      "type": "steps",
+      "sticker": "ÉTAPE 2/3",
+      "pac": "Le coup de maître",
+      "title": "Il réapparaît",
+      "steps": [
+        "Option 1 : <b>sauvegarde</b> (Pause, Jeu, Sauvegarder) puis <b>recharge</b>.",
+        "Option 2 : <b>éloigne-toi de 500 à 800 m</b>, puis reviens.",
+        "Le butin est revenu : <b>remplis encore tes sacs</b>."
+      ],
+      "warn": {
+        "label": "SI ÇA BLOQUE",
+        "text": "Recharge <b>une ou deux fois de plus</b> ou attends quelques jours dans le jeu."
+      },
+      "teaser": "OÙ VENDRE ARRIVE"
+    },
+    {
+      "type": "rows",
+      "sticker": "ÉTAPE 3/3",
+      "pac": "Transforme tout en cash",
+      "title": "Où vendre",
+      "rows": [
+        {
+          "n": "1",
+          "title": "Brian's Lockup",
+          "text": "Sud-ouest de Key Lento · code <b>7700</b>"
+        },
+        {
+          "n": "2",
+          "title": "Tyrone, à Vice City",
+          "text": "Dès le chapitre 3 : <b>+50 000 $</b> d'un coup"
+        }
+      ],
+      "warn": {
+        "label": "ATTENTION",
+        "text": "Avant le chapitre 2, <b>dépense ton argent avant la mission Tourist Trap</b>."
+      }
+    },
+    {
+      "type": "cta",
+      "pac": "Team glitch ou team légal&nbsp;?",
+      "comment": "Dis-moi en commentaire combien<br>tu as fait avec.",
+      "share": "Envoie-le à ton pote<br>qui est toujours fauché"
+    }
+  ]
+}
