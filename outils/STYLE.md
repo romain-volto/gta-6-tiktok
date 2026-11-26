@@ -55,11 +55,11 @@ Romain veut que **chaque** titre et **chaque** description soient optimisés pou
 - Ajoute la promesse concrète : un gain chiffré, un nom de lieu ou d'objet du jeu (« 250 000 $ », « Key Lento », « chemise de Tommy Vercetti »).
 - Exemples : « GTA 6 codes de triche : code argent 250 000 $ et cheats PS5 Xbox », « GTA 6 argent facile : le perroquet qui cache 2 000 $ à Key Lento ».
 
-**Description (1 200 à 2 000 caractères)**
-- La première phrase reprend la recherche telle qu'on la tape : « Codes de triche GTA 6 (cheat codes PS5 et Xbox) : … », « Argent facile GTA 6 : … », « GTA 6 secret : … ».
-- Le mot-clé principal revient 2 ou 3 fois naturellement, avec des variantes (GTA 6, GTA VI, PS5, Xbox) et des tournures de question : « Comment débloquer … dans GTA 6 : », « Où trouver … dans GTA 6 : ».
-- Cite les noms propres du jeu (lieux, véhicules, missions, personnages) : ce sont des recherches à part entière.
-- Puis les étapes claires, une question simple pour les commentaires, « Enregistre ce post » et « Abonne-toi pour d'autres astuces GTA 6 ».
+**Description courte (environ 300 à 500 caractères, hashtags non compris)**
+- Le mot-clé principal est tout au début, dans les 50 premiers caractères, tel qu'on le tape dans la recherche : « Codes de triche GTA 6 : … », « Argent facile GTA 6 : … », « GTA 6 secret : … ».
+- Ensuite, en 2 ou 3 phrases courtes : la promesse concrète, le nom propre clé du jeu (lieu, véhicule, mission ou personnage), et une variante du mot-clé (GTA VI, PS5, Xbox) si elle vient naturellement.
+- Termine par une question simple pour les commentaires et un appel court : « Enregistre ce post et abonne-toi pour d'autres astuces GTA 6. »
+- Pas de liste d'étapes dans la description : les étapes sont sur les slides.
 - 10 à 12 hashtags à la fin : 3 larges (#gta6 #gtavi #gaming), 5 à 7 liés au sujet (#gta6argent, #gta6cheat, #gta6secret, #gta6braquage, #gta6voiture…), 2 francophones (#gta6fr #gamingfr).
 
 **Slides**
