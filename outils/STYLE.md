@@ -103,7 +103,11 @@ Ce qui compte pour TikTok en 2026, dans l'ordre : temps passé et taux de compl�
 - Un post mème = un seul mème (une seule image), demandé par Romain. On choisit la meilleure idée du jour plutôt que plusieurs moyennes.
 - Images : celles que Romain envoie, rangées dans `banque/` (ses captures ou des images qu'il a trouvées). Si une image vient d'un autre créateur, son crédit est dans `banque/credits.txt` ou dans le nom du fichier après « __ » (20261126-153000__Nom-du-createur.jpg) : ajouter « Crédit photo : Nom » à la fin de la description (sans @) et ne jamais retirer sa signature. Une image utilisée est ajoutée à `banque/utilisees.txt`.
 - Sans capture : mèmes 100 % maison avec le type `meme` de `hud.py` (variantes `echec` « MISSION ÉCHOUÉE », `notifs` notifications de téléphone, `stars` niveau de recherche, `wheel` roue de choix). Exemple : `outils/exemple-meme-hud/spec.json`. On ne dessine jamais Jason, Lucia ni un autre personnage du jeu.
-- Légendes : écrites par nous, courtes (2 à 3 lignes), sur des situations que tous les joueurs vivent (Jason et Lucia en couple, la police, les voitures, l'attente de 13 ans, les quêtes ratées). On s'inspire des thèmes qui font rire sur Reddit, X et TikTok, jamais d'un mème recopié ni du texte d'un autre créateur.
+- Légendes (règle de Romain) :
+  - Image sans texte : on écrit la blague nous-mêmes, courte (2 à 3 lignes), sur des situations que tous les joueurs vivent (Jason et Lucia en couple, la police, les voitures, l'attente de 13 ans, les quêtes ratées).
+  - Image avec un texte en anglais (mème trouvé par Romain) : on le traduit en français naturel, en adaptant l'expression pour que la blague marche en français (pas de mot à mot). On refait le mème à notre format avec `meme.py` : on recadre l'image pour retirer l'ancien texte, puis on met la traduction dans notre bulle. On crédite le créateur si son nom est visible ou connu. Si l'ancien texte ne peut pas être retiré proprement, on n'utilise pas l'image.
+  - Image avec un texte déjà en français : on ne reposte pas le mème d'un autre créateur tel quel, on écrit notre propre blague sur l'image si on peut retirer son texte, sinon on ne l'utilise pas.
+- Images à ne pas utiliser, même traduites : une vraie personne dans un contexte d'accusation, de crime ou de sexe ; les personnages de dessins animés des grandes marques (Disney, etc.), souvent retirés pour droits d'auteur ; tout ce qui se moque d'une communauté.
 - Pas d'emoji, pas de @, rien de sexuel ni d'humiliant sur une vraie personne.
 
 ### Recette d'un mème qui fait rire
