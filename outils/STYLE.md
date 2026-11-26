@@ -101,7 +101,7 @@ Ce qui compte pour TikTok en 2026, dans l'ordre : temps passé et taux de compl�
 
 - Format TikTok classique : une capture du jeu, une légende dans une bulle blanche arrondie au-dessus, une petite réplique entre parenthèses en bas à droite (« (je suis foutu) »). Rendu : `python3 outils/meme.py posts/<dossier>/spec.json` (exemple : `outils/exemple-meme/spec.json`).
 - Un post mème = un carrousel de 3 à 5 mèmes sur un même thème (« POV : … »), pour garder les gens plus longtemps.
-- Captures : uniquement celles de Romain, dans `banque/`. Une capture utilisée est ajoutée à `banque/utilisees.txt`. Jamais d'image prise sur un forum, Reddit ou chez un autre créateur.
+- Images : celles que Romain envoie, rangées dans `banque/` (ses captures ou des images qu'il a trouvées). Si une image vient d'un autre créateur, son crédit est dans `banque/credits.txt` : ajouter « Crédit photo : Nom » à la fin de la description (sans @) et ne jamais retirer sa signature. Une image utilisée est ajoutée à `banque/utilisees.txt`.
 - Sans capture : mèmes 100 % maison avec le type `meme` de `hud.py` (variantes `echec` « MISSION ÉCHOUÉE », `notifs` notifications de téléphone, `stars` niveau de recherche, `wheel` roue de choix). Exemple : `outils/exemple-meme-hud/spec.json`. On ne dessine jamais Jason, Lucia ni un autre personnage du jeu.
 - Légendes : écrites par nous, courtes (2 à 3 lignes), sur des situations que tous les joueurs vivent (Jason et Lucia en couple, la police, les voitures, l'attente de 13 ans, les quêtes ratées). On s'inspire des thèmes qui font rire sur Reddit, X et TikTok, jamais d'un mème recopié ni du texte d'un autre créateur.
 - Pas d'emoji, pas de @, rien de sexuel ni d'humiliant sur une vraie personne.
