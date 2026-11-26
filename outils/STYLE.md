@@ -97,16 +97,32 @@ Ce qui compte pour TikTok en 2026, dans l'ordre : temps passé et taux de compl�
 - Les plus gros comptes GTA 6 postent des découvertes à la première personne (« J'ai volé la voiture de Paul Walker dans GTA 6 », « J'ai trouvé un ours polaire ») et des « pro tips » très courts. Reprendre ce ton dans les accroches, en français.
 - Suivre ce qui buzze sur GTA 6 (presse jeu vidéo, YouTube, X, TikTok) et réagir dans les 24 à 48 h.
 
+## Miniature (slide 1)
+- La slide 1 est la miniature (photoCoverIndex 0). Sur le profil, TikTok la recadre au centre en 3:4 : environ 240 px coupés en haut et en bas. Tout ce qui compte (titre, chiffre, partie, visage ou voiture) doit être entre 300 et 1600 px de haut. Le petit label tout en haut n'apparaît pas sur la grille.
+- À la taille d'une case du profil (un tiers de la largeur du téléphone), il faut lire le titre en une seconde : 3 lignes maximum, mots courts, gros, contrasté. Les mots en dégradé ont un contour sombre pour rester lisibles.
+- Une série montre son numéro en gros sur la miniature : champ `badge` du hook (« Partie 2 »). Deux miniatures voisines ne doivent pas se ressembler (image, couleur dominante ou titre différents).
+- Vérification obligatoire avant publication : `python3 outils/grille.py posts/<dossier>` puis ouvrir /tmp/grille.jpg avec Read. Si le titre ne se lit pas, si la miniature se confond avec ses voisines ou si quelque chose d'important est coupé, corriger et relancer.
+
+## Musique
+- Metricool ne permet pas de choisir le titre depuis le connecteur : on garde `autoAddMusic: true` (TikTok met une musique tendance tout seul).
+- Chaque matin, on propose à Romain, pour chaque post, un son tendance qui colle à GTA 6 et à l'ambiance du post. Après la publication, il peut le remplacer en quelques secondes dans l'appli TikTok (modifier le post, puis le son).
+- Où chercher : les sons de la bande originale de GTA 6 qui explosent sur TikTok (vérifier chaque matin avec la veille), les musiques des trailers, et les sons du moment dans le top TikTok France.
+  - Mème : le son drôle ou le son de trend du moment.
+  - Astuce argent, braquage : rap ou trap qui monte.
+  - Comparaison Vice City, nostalgie : son années 80 ou musique des trailers.
+- Repères fin novembre 2026 : « Suzuki » de Fuerza Regida (titre de la BO de GTA 6, plus de 3,5 millions de vidéos TikTok), « Love Is a Long Road » de Tom Petty (trailer 1), « Hot Together » des Pointer Sisters (trailer 2), « Go Easy » de Dua Lipa et « Crazy for You » de Lana Del Rey (BO du jeu).
+
 ## Mèmes (post réaction)
 
 - Format TikTok classique : une capture du jeu, une légende dans une bulle blanche arrondie au-dessus, une petite réplique entre parenthèses en bas à droite (« (je suis foutu) »). Rendu : `python3 outils/meme.py posts/<dossier>/spec.json` (exemple : `outils/exemple-meme/spec.json`).
 - Un post mème = un seul mème (une seule image), demandé par Romain. On choisit la meilleure idée du jour plutôt que plusieurs moyennes.
-- Images : celles que Romain envoie, rangées dans `banque/` (ses captures ou des images qu'il a trouvées). Si une image vient d'un autre créateur, son crédit est dans `banque/credits.txt` ou dans le nom du fichier après « __ » (20261126-153000__Nom-du-createur.jpg) : ajouter « Crédit photo : Nom » à la fin de la description (sans @) et ne jamais retirer sa signature. Une image utilisée est ajoutée à `banque/utilisees.txt`.
+- Images : celles que Romain envoie, rangées dans `banque/` (ses captures ou des images qu'il a trouvées). Une image utilisée est ajoutée à `banque/utilisees.txt`.
+- Mentions et crédits (règle de Romain) : les pseudos et mentions de l'interface (TikTok, X, Instagram : @pseudo, nom du compte, boutons) sont retirés en recadrant sur l'image. Romain crédite lui-même le créateur en description et en commentaire : on n'écrit pas de crédit dans la description, on lui donne le nom du créateur (visible sur la capture, dans `banque/credits.txt` ou après « __ » dans le nom du fichier) dans le message du matin. Une signature ou un filigrane que le créateur a dessiné sur son image reste en place (on ne l'efface pas) ; seules les marques de Romain (haveNV, TAS) peuvent être retirées.
 - Sans capture : mèmes 100 % maison avec le type `meme` de `hud.py` (variantes `echec` « MISSION ÉCHOUÉE », `notifs` notifications de téléphone, `stars` niveau de recherche, `wheel` roue de choix). Exemple : `outils/exemple-meme-hud/spec.json`. On ne dessine jamais Jason, Lucia ni un autre personnage du jeu.
 - Légendes (règle de Romain) :
   - Image sans texte : on écrit la blague nous-mêmes, courte (2 à 3 lignes), sur des situations que tous les joueurs vivent (Jason et Lucia en couple, la police, les voitures, l'attente de 13 ans, les quêtes ratées).
   - Image avec un texte en anglais (mème trouvé par Romain) : on le traduit en français naturel, en adaptant l'expression pour que la blague marche en français (pas de mot à mot). On refait le mème à notre format avec `meme.py` : on recadre l'image pour retirer l'ancien texte, puis on met la traduction dans notre bulle. On crédite le créateur si son nom est visible ou connu. Si l'ancien texte ne peut pas être retiré proprement, on n'utilise pas l'image.
-  - Image avec un texte déjà en français : on ne reposte pas le mème d'un autre créateur tel quel, on écrit notre propre blague sur l'image si on peut retirer son texte, sinon on ne l'utilise pas.
+  - Image avec un texte déjà en français (règle de Romain) : on reposte le mème avec son texte, recadré sur le mème lui-même (sans l'interface de l'appli) et mis au format 1080 x 1920 avec `meme.py`, layout `contain` et sans bulle (`text` vide).
 - Images à ne pas utiliser, même traduites : une vraie personne dans un contexte d'accusation, de crime ou de sexe ; les personnages de dessins animés des grandes marques (Disney, etc.), souvent retirés pour droits d'auteur ; tout ce qui se moque d'une communauté.
 - Pas d'emoji, pas de @, rien de sexuel ni d'humiliant sur une vraie personne.
 
