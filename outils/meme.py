@@ -7,8 +7,10 @@ Spec : {"slides": [{"image": "img/x.jpg", "text": "La situation…", "punch": "(
 - layout "center" (par défaut, pour les captures en paysage) : capture en pleine largeur au centre,
   même image floutée en fond, légende au-dessus de la capture.
 - layout "full" (captures en portrait) : capture plein écran, légende en haut.
-- punch : petite réplique en bas à droite de la capture (facultatif).
-Règles : pas d'emoji, pas de @, captures de Romain uniquement (dossier banque/ ou img/ du post).
+- layout "contain" (mème déjà légendé, ex. repost d'un mème en français) : image entière centrée sur fond flouté,
+  sans bulle si "text" est vide.
+- punch : petite réplique en bas à droite de la capture (facultatif). text vide = pas de bulle.
+Règles : pas d'emoji ni de @ dans nos textes, images de la banque de Romain uniquement (dossier banque/ ou img/ du post).
 """
 import json, pathlib, sys
 
@@ -32,13 +34,18 @@ def page(s, base):
     img = (base / s["image"]).resolve().as_uri()
     focus = s.get("focus", "50% 50%")
     text, punch = s.get("text", ""), s.get("punch", "")
-    if s.get("layout") == "full":
+    cap = lambda style: (f'<div class="cap" id="cap" style="{style}"><span class="box">{text}</span></div>' if text else "")
+    if s.get("layout") == "contain":
+        # Mème déjà légendé (repost d'un mème en français) : image entière, centrée dans la zone sûre, sans bulle ajoutée
+        body = (f'<img class="bg" src="{img}"><img src="{img}" style="position:absolute;left:0;top:200px;width:1080px;height:1300px;object-fit:contain">'
+                + cap("top:120px") + (f'<div class="punch" style="top:1380px">{punch}</div>' if punch else ""))
+    elif s.get("layout") == "full":
         body = (f'<img class="shot" src="{img}" style="top:0;height:1920px;object-position:{focus}">'
-                f'<div class="cap" style="top:300px"><span class="box">{text}</span></div>'
+                + cap("top:300px")
                 + (f'<div class="punch" style="top:1250px">{punch}</div>' if punch else ""))
     else:
         body = (f'<img class="bg" src="{img}"><img class="shot" id="shot" src="{img}" style="top:760px;height:680px;object-position:{focus}">'
-                f'<div class="cap" id="cap" style="bottom:1200px"><span class="box">{text}</span></div>'
+                + cap("bottom:1200px")
                 + (f'<div class="punch" style="top:1330px">{punch}</div>' if punch else ""))
     return f'<!DOCTYPE html><html><head><meta charset="utf-8"><style>{CSS}</style></head><body>{body}</body></html>'
 

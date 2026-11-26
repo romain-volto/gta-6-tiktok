@@ -11,7 +11,8 @@ Dans tous les textes, <g>mot</g> met le mot en dégradé chaud.
 Types de slides (champ "type") :
 - "hook"  : accroche. Champs : label, sub (petit texte en haut à gauche), hud {plus, amount, stars} (facultatif, en haut à droite),
             chip, title, title_size, puis UN visuel au choix : wheel {left:{icon,l1,l2}, right:{icon,l1,l2}, center:[l1,l2], hint}
-            | bignum {num, text} | image "img/x.jpg" (+ image_top, image_height, image_fit "cover" ou "contain") | icon "nom".
+            | bignum {num, text} | image "img/x.jpg" (+ image_top, image_height, image_fit "cover" ou "contain",
+            badge = pastille bien visible sur la miniature, ex. « Partie 2 ») | icon "nom".
             Puis pill (pastille en bas, ex. « L'ASTUCE EN 3 ÉTAPES → »).
 - "steps" : étape. Champs : tag (ex. MISSION), step (ex. ÉTAPE 1/3), title, points [{icon, text}] (3 max conseillé,
             le dernier est mis en avant), warn {title, text} (facultatif), next (pastille du bas, facultatif).
@@ -52,7 +53,7 @@ body{{position:relative;font-family:Inter;color:#fff;-webkit-font-smoothing:anti
 .shade{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,4,12,.6),rgba(26,4,12,.12) 42%,rgba(26,4,12,.38) 72%,rgba(26,4,12,.72))}}
 .leak{{position:absolute;inset:0;background:radial-gradient(60% 40% at 100% 0%,rgba(255,170,80,.35),transparent 70%),radial-gradient(55% 35% at 0% 100%,rgba(255,80,60,.28),transparent 70%)}}
 .vig{{position:absolute;inset:0;background:radial-gradient(120% 80% at 50% 45%,transparent 55%,rgba(25,5,0,.5))}}
-.grad{{background:linear-gradient(100deg,{A} 0%,{B} 50%,{C} 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.08em;filter:drop-shadow(0 6px 0 rgba(60,8,10,.6)) drop-shadow(0 0 18px rgba(255,140,90,.3))}}
+.grad{{background:linear-gradient(100deg,{A} 0%,{B} 50%,{C} 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.08em;filter:drop-shadow(2px 0 0 #3A0408) drop-shadow(-2px 0 0 #3A0408) drop-shadow(0 2px 0 #3A0408) drop-shadow(0 -2px 0 #3A0408) drop-shadow(0 7px 0 rgba(40,4,6,.8)) drop-shadow(0 0 18px rgba(255,140,90,.3))}}
 .gbg{{background:linear-gradient(90deg,{A},{B} 50%,{C})}}
 .glass{{background:{GLASS};border:2px solid {LINE};border-radius:30px;backdrop-filter:blur(16px)}}
 .lab{{font:900 24px Inter;letter-spacing:5px;color:{A};text-transform:uppercase}}
@@ -210,6 +211,11 @@ def body(s, base, n, total):
         elif s.get("image"):
             top, h = s.get("image_top", 740), s.get("image_height", 620)
             out += f'<div class="content" style="top:{top}px">{photo_box(base, s["image"], h, fit=s.get("image_fit", "cover"))}</div>'
+            if s.get("badge"):
+                # Pastille bien visible sur la miniature (ex. « Partie 2 » d'une série)
+                out += (f'<div class="abs" style="top:{top - 46}px;right:84px;transform:rotate(-4deg);background:#FFF3E0;color:#2A0608;'
+                        f'font:900 italic 74px/1 Barlow;text-transform:uppercase;padding:14px 30px 10px;border-radius:20px;'
+                        f'box-shadow:0 10px 0 #3A0408,0 0 40px {GLOW}">{s["badge"]}</div>')
             out += pill(s.get("pill"), 1410) if top + h <= 1390 else ""
         elif s.get("bignum"):
             bn = s["bignum"]
