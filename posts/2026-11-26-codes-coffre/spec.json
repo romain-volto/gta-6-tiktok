@@ -1,0 +1,123 @@
+{
+ "sujet": "Codes de coffre GTA 6 : 19 codes vérifiés (arme unique Crabshack VF5, planques, garages, coffres des gangs)",
+ "slides": [
+  {
+   "type": "hook",
+   "sticker": "CODES DE COFFRE",
+   "pac": "Tu les as tous ouverts ?",
+   "title": "Codes de coffre<br><span class='y'>GTA 6</span>",
+   "title_size": 150,
+   "visual": {
+    "kind": "bignum",
+    "num": "19",
+    "text": "codes<br>vérifiés",
+    "text_size": 110
+   },
+   "pill": "L'ARME UNIQUE EN SLIDE 3"
+  },
+  {
+   "type": "steps",
+   "sticker": "AVANT DE TAPER",
+   "pac": "Sinon le coffre reste fermé",
+   "title": "3 règles",
+   "steps": [
+    "L'indice est <b>toujours sur place</b> : une note, un ordinateur, une carte murale ou des photos.",
+    "Garde <b>le premier zéro</b> : 0300, 0072, 092319 ou 031462 ne marchent pas sans lui.",
+    "Quelques coffres changent <b>d'un joueur à l'autre</b> (prêteur Avery Pawn, bunker de South Point) : là, lis l'indice."
+   ],
+   "teaser": "L'ARME UNIQUE ARRIVE"
+  },
+  {
+   "type": "rows",
+   "sticker": "LE PUZZLE DU CRABE",
+   "pac": "Le secret de Pelican Valley",
+   "title": "Arme unique",
+   "place": "Labo de recherche abandonné · Grassrivers",
+   "rows": [
+    {
+     "n": "1",
+     "title": "L'ordinateur",
+     "text": "Le mot de passe est gravé au sol<br><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:44px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">CLEAVES</span>"
+    },
+    {
+     "n": "2",
+     "title": "Le coffre de la maison",
+     "text": "Le double du spécimen 0036<br><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:44px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">0072</span>"
+    },
+    {
+     "n": "3",
+     "title": "La porte du ponton",
+     "text": "La mitraillette <b>Crabshack VF5</b><br><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:44px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">0212</span>"
+    }
+   ],
+   "warn": {
+    "label": "BONUS",
+    "text": "Le coffre contient aussi <b>du cash</b> et la note avec le code du ponton."
+   }
+  },
+  {
+   "type": "rows",
+   "sticker": "COFFRES CACHÉS",
+   "pac": "Cash et objets rares",
+   "title": "Les planques",
+   "rows": [
+    {
+     "n": "1",
+     "title": "Caravane, Cottonmouth Lake",
+     "text": "Cash + carte <b>Laki Maivia</b><br><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:44px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">44017</span>"
+    },
+    {
+     "n": "2",
+     "title": "Hôtel Marbelle, Crosstown",
+     "text": "Montre <b>Crowex</b> + cash (indice sur le toit)<br><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:44px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">955214</span>"
+    },
+    {
+     "n": "3",
+     "title": "Entrepôt Black Eagle, Balsero",
+     "text": "Porte 789987, puis pistolet <b>Kalinga .50</b><br><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:44px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">031462</span>"
+    }
+   ],
+   "teaser": "LES GARAGES ARRIVENT"
+  },
+  {
+   "type": "rows",
+   "sticker": "GARAGES SECRETS",
+   "pac": "Ouvre-les tous",
+   "title": "Les garages",
+   "rows": [
+    {
+     "n": "1",
+     "title": "Maison de fête, Key Lento",
+     "text": "Au sud-est de l'île<br><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:44px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">092319</span>"
+    },
+    {
+     "n": "2",
+     "title": "Verger Red Apple",
+     "text": "Indice : le magazine n°36 de 07/82<br><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:44px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">360782</span>"
+    },
+    {
+     "n": "3",
+     "title": "Garage de Vanessa",
+     "text": "Sa voiture <b>Growler</b> t'attend<br><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:44px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">92665</span>"
+    }
+   ],
+   "warn": {
+    "label": "VANESSA",
+    "text": "Son ordinateur demande <b>MUFFINS</b>, puis <b>QUEEN</b>, puis <b>15</b>."
+   }
+  },
+  {
+   "type": "custom",
+   "sticker": "PLANQUES DES GANGS",
+   "pac": "Opérations illégales",
+   "title": "9 coffres",
+   "html": "<div style='margin-top:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px'><div style='background:rgba(14,5,36,.88);border:2px solid rgba(255,255,255,.16);border-radius:24px;padding:20px 14px 22px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px'><div style='font-size:28px;font-weight:800;line-height:1.15;min-height:66px;display:flex;align-items:center'>Brooks Boatworks</div><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:48px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">6823</span></div><div style='background:rgba(14,5,36,.88);border:2px solid rgba(255,255,255,.16);border-radius:24px;padding:20px 14px 22px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px'><div style='font-size:28px;font-weight:800;line-height:1.15;min-height:66px;display:flex;align-items:center'>Kingpin Bowling</div><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:48px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">0300</span></div><div style='background:rgba(14,5,36,.88);border:2px solid rgba(255,255,255,.16);border-radius:24px;padding:20px 14px 22px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px'><div style='font-size:28px;font-weight:800;line-height:1.15;min-height:66px;display:flex;align-items:center'>La Cascara Motel</div><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:48px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">6969</span></div><div style='background:rgba(14,5,36,.88);border:2px solid rgba(255,255,255,.16);border-radius:24px;padding:20px 14px 22px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px'><div style='font-size:28px;font-weight:800;line-height:1.15;min-height:66px;display:flex;align-items:center'>Sunrise RV Park</div><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:48px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">6769</span></div><div style='background:rgba(14,5,36,.88);border:2px solid rgba(255,255,255,.16);border-radius:24px;padding:20px 14px 22px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px'><div style='font-size:28px;font-weight:800;line-height:1.15;min-height:66px;display:flex;align-items:center'>Nova Auto Junkyard</div><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:48px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">7777</span></div><div style='background:rgba(14,5,36,.88);border:2px solid rgba(255,255,255,.16);border-radius:24px;padding:20px 14px 22px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px'><div style='font-size:28px;font-weight:800;line-height:1.15;min-height:66px;display:flex;align-items:center'>Farm Fix Meth Lab</div><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:48px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">2121</span></div><div style='background:rgba(14,5,36,.88);border:2px solid rgba(255,255,255,.16);border-radius:24px;padding:20px 14px 22px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px'><div style='font-size:28px;font-weight:800;line-height:1.15;min-height:66px;display:flex;align-items:center'>Illegal Sneaker Trade</div><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:48px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">4124</span></div><div style='background:rgba(14,5,36,.88);border:2px solid rgba(255,255,255,.16);border-radius:24px;padding:20px 14px 22px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px'><div style='font-size:28px;font-weight:800;line-height:1.15;min-height:66px;display:flex;align-items:center'>Casa Guardia</div><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:48px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">1965</span></div><div style='background:rgba(14,5,36,.88);border:2px solid rgba(255,255,255,.16);border-radius:24px;padding:20px 14px 22px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px'><div style='font-size:28px;font-weight:800;line-height:1.15;min-height:66px;display:flex;align-items:center'>Saber Shipping Yard</div><span style=\"display:inline-block;margin-top:10px;font-family:Anton;font-size:48px;letter-spacing:5px;color:#14062E;background:#FFD23F;border-radius:12px;padding:4px 18px 2px;box-shadow:4px 4px 0 #FF3D8B\">8046</span></div></div><div style='margin-top:22px' class='warn'><em>ASTUCE</em><div>Chaque coffre a <b>son indice dans la planque</b> : carte murale, carnet ou ordinateur.</div></div>"
+  },
+  {
+   "type": "cta",
+   "pac": "Combien t'en as ouvert ?",
+   "comment": "Dis-moi en commentaire combien<br>de coffres tu as déjà ouverts.",
+   "share": "Envoie-le à ton pote<br>bloqué devant un coffre"
+  }
+ ]
+}
