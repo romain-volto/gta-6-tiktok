@@ -8,34 +8,33 @@ Créateur : Romain. Public : 76 % d'hommes, francophones, joueurs de GTA 6 (sort
 - Tout en français. **Aucun emoji**, ni sur les slides ni dans les descriptions.
 - **Aucune mention @** d'un autre créateur sur les slides. On peut citer un découvreur par son nom dans la description, sans @.
 - Format 1080 × 1920, export JPEG (TikTok refuse le PNG pour les posts photo).
-- Le contenu reste au-dessus de 1 500 px (l'interface TikTok couvre le bas). `neon.py` le vérifie et réduit le texte si besoin.
-- Style néon Vice City : ciel violet-rose, soleil rayé, palmiers, sol en grille, polices Anton (titres) et Pacifico (sous-titres roses). Ne pas changer ce décor.
-- Couleurs : rose #FF3D8B, turquoise #2DE2C8, jaune #FFD23F.
+- Le contenu reste au-dessus de 1 500 px (l'interface TikTok couvre le bas). `hud.py` le vérifie, réduit les titres trop larges et signale ce qui dépasse.
+- **Style « HUD · Roue des récompenses »** (choisi par Romain le 26/11) : on dirait l'écran du jeu. Fond de plage de Vice City au coucher du soleil, flouté (palmiers, poste de surveillance) ; par-dessus, des éléments d'interface de jeu : compteur d'argent et étoiles de recherche en haut à droite, cartes en verre fumé, roue de sélection, repères d'itinéraire, bandeau d'alerte rouge. Titres en Barlow Condensed italique majuscule, textes en Inter. Ne pas changer ce décor.
+- Couleurs chaudes : ambre #FFB13D, orange #FF5A36, magenta #E8336D (dégradé pour les mots forts : `<g>mot</g>`).
 - Jamais de personnage, logo ou pochette protégés dessinés ou copiés. Pas de photo de personne réelle.
 - Chaque info de jeu doit être vérifiée dans au moins deux sources récentes. Si une info vient seulement de joueurs, l'écrire (« selon les joueurs »).
 
 ## Structure d'un carrousel (5 à 8 slides)
 
-1. **Accroche** (`hook`) : un secret ou un gain chiffré (« +2 000 $ », « 14 voitures »), un sous-titre Pacifico, un visuel (`ring`, `bignum`, `icon`) et une pastille blanche qui donne envie de swiper.
-2. **Étapes** (`steps`, `rows`, `message`, `rewards`, `photo`, `custom`) : sticker « ÉTAPE x/y », titre court (2-3 mots), un lieu si utile, 3 ou 4 étapes de 1 à 2 lignes avec les mots clés en `<b>`.
-3. **Dernière slide** (`cta`) : « Enregistre et partage », une question simple pour les commentaires, bouton S'abonner.
+1. **Accroche** (`hook`) : un secret ou un gain chiffré, en haut le contexte (`label`, `sub`) et si utile le compteur (`hud`), un titre qui pose une question, puis UN visuel : la roue (`wheel`) quand le post oppose deux choix, un gros chiffre (`bignum`), une photo du jeu (`image`) ou une icône. Finir par une pastille (`pill`) qui donne envie de swiper.
+2. **Étapes** (`steps`, `rows`, `photo`, `versus`) : « MISSION » + « ÉTAPE x/y », titre court (2-3 mots, un mot en `<g>`), 3 repères maximum avec icône, mots clés en `<b>`, alerte rouge (`warn`) si un piège existe, pastille `next` vers la suite.
+3. **Dernière slide** (`cta`) : question qui divise en titre, commentaire, partage, « Enregistre » et « Abonne-toi ».
 
 Format qui marche le mieux sur le compte (stats du 24/11) : **une astuce précise avec un gain chiffré** (la maison de Jason +5 000 $ : 8,6 % de j'aime, 301 enregistrements). Les listes générales (« 10 astuces ») marchent moins. Sujets porteurs : braquages, argent, secrets et easter eggs, voitures rares.
 
 ## Types de slides (spec.json)
 
-Voir `posts/2026-11-24-perroquet-cash/spec.json` pour un exemple complet.
+Exemple complet : `outils/exemple-hud/spec.json`. La liste détaillée des champs est en tête de `outils/hud.py`.
 
-- `hook` : sticker, pac, title (HTML, `<span class='y'>` pour le jaune), visual {kind: ring|bignum|icon|image}, pill.
-- `steps` : sticker, pac, title, place, intro, steps [..], warn {label, text}.
-- `rows` : liste numérotée, rows [{n, title, text}], warn.
-- `message` : sender, message (bulle SMS), steps.
-- `rewards` : steps, rewards [{icon, title, text}] (icônes : cash, shirt, bike, car, paint, gift, star, heart, bolt, eye, key, map, phone, clock, trophy).
-- `photo` : visual {kind: image, src, height}, text.
-- `custom` : html libre sous l'en-tête.
-- `cta` : pac, comment.
+- `hook` : label, sub, hud {plus, amount, stars}, chip, title, puis wheel {left, right, center, hint} | bignum {num, text} | image | icon, et pill.
+- `steps` : tag, step, title, points [{icon, text}], warn {title, text}, next.
+- `rows` : tag, step, title, rows [{k, v}] (ex. code et effet, rang et voiture), next.
+- `photo` : tag, title, image, caption, next.
+- `versus` : tag, title, photos [{src, label}, {src, label}], caption (comparaisons GTA / vraie vie, 2002 / 2026).
+- `cta` : title, comment, share.
+- Icônes : moon, heli, fox, cash, smg, star, pin, car, key, eye, trophy, flame, lock, map, phone.
 
-Rendu : `python3 outils/neon.py posts/<dossier>/spec.json`, puis vérifier `/tmp/<dossier>-planche.jpg`.
+Rendu : `python3 outils/hud.py posts/<dossier>/spec.json`, puis vérifier `/tmp/<dossier>-planche.jpg`. L'ancien style néon (`neon.py`) n'est plus utilisé pour les nouveaux posts.
 
 ## Publication (Metricool)
 
@@ -78,7 +77,7 @@ Ce qui compte pour TikTok en 2026, dans l'ordre : temps passé et taux de compl�
 
 **Slides 2 et suivantes**
 - La slide 2 relance (petit suspense ou première info choc), pas une intro molle.
-- Au milieu, une relance avec le champ `teaser` (« Le meilleur arrive en slide 5 »).
+- Au milieu, une relance avec le champ `next` (« Le meilleur arrive en slide 5 → »).
 - Une idée par slide, 3 ou 4 lignes maximum, mots clés en `<b>`. 5 à 8 slides au total.
 
 **Slide finale**
@@ -91,7 +90,7 @@ Ce qui compte pour TikTok en 2026, dans l'ordre : temps passé et taux de compl�
 **Mélange des 3 posts du jour**
 - 1 post « utile à garder » (argent, braquage, codes, emplacements) : vise les enregistrements.
 - 1 post « découverte à partager » (secret, easter egg, détail fou du jeu, voiture rare) : vise les partages.
-- 1 post « réaction » (mème, situation que tous les joueurs vivent, Jason et Lucia, classement ou « top 5 ») : vise les commentaires. Ça reste en carrousel néon, avec la même charte.
+- 1 post « réaction » (mème, situation que tous les joueurs vivent, Jason et Lucia, classement ou « top 5 ») : vise les commentaires. Ça reste dans la même charte HUD.
 - Séries numérotées quand un sujet marche (« Braquage n°2 », « Secret n°3 ») : ça fait visiter le profil.
 
 **Inspiration**

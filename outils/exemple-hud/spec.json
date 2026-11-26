@@ -1,0 +1,23 @@
+{
+  "sujet": "Exemple du style HUD (rencontre des furries)",
+  "slides": [
+    {"type": "hook", "label": "GTA VI · Rencontre aléatoire", "sub": "Le renard de Vice City",
+     "hud": {"plus": "+ $15 000", "amount": "$15 000", "stars": 2},
+     "chip": "Roue des récompenses", "title": "L'arme <g>ou</g><br>l'argent&nbsp;?",
+     "wheel": {"left": {"icon": "smg", "l1": "SMG", "l2": "unique"}, "right": {"icon": "cash", "l1": "15 000 $", "l2": "en cash"},
+               "center": ["PRENDS", "LES DEUX"], "hint": "tout prendre"},
+     "pill": "L'ASTUCE EN 3 ÉTAPES →"},
+    {"type": "steps", "tag": "Mission", "step": "Étape 1/3", "title": "Trouver<br><g>Chase</g>",
+     "points": [{"icon": "moon", "text": "Roule <b>la nuit</b> dans Vice City."},
+                {"icon": "heli", "text": "Cherche <b>un hélico de police</b> et son projecteur."},
+                {"icon": "fox", "text": "Il éclaire <b>un homme en costume de renard</b>&nbsp;: c'est Chase."}],
+     "warn": {"title": "Échec si tu passes ton chemin", "text": "La police l'abat et la rencontre ne revient jamais."},
+     "next": "PROCHAINE ÉTAPE : LE SAUVER →"},
+    {"type": "rows", "tag": "Mission", "step": "Étape 3/3", "title": "<g>L'astuce</g>",
+     "rows": [{"k": "1", "v": "Choisis <b>la SMG</b>."}, {"k": "2", "v": "Mission finie&nbsp;: <b>élimine Chase</b>."}, {"k": "3", "v": "Fouille-le&nbsp;: <b>les 15 000 $</b> sont sur lui."}]},
+    {"type": "versus", "tag": "Ocean Beach", "title": "2002 <g>vs</g> 2026",
+     "photos": [{"src": "../../posts/2026-11-26-vice-city-2002-vs-2026/img/2002.jpg", "label": "Vice City · 2002"},
+                {"src": "../../posts/2026-11-26-vice-city-2002-vs-2026/img/2026.jpg", "label": "GTA 6 · 2026"}]},
+    {"type": "cta", "title": "Team arme<br><g>ou argent&nbsp;?</g>", "comment": "Dis-moi en commentaire ce que tu avais choisi.", "share": "Envoie-le à ton pote qui a pris l'argent"}
+  ]
+}
