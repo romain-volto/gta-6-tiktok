@@ -96,3 +96,11 @@ Ce qui compte pour TikTok en 2026, dans l'ordre : temps passé et taux de compl�
 **Inspiration**
 - Les plus gros comptes GTA 6 postent des découvertes à la première personne (« J'ai volé la voiture de Paul Walker dans GTA 6 », « J'ai trouvé un ours polaire ») et des « pro tips » très courts. Reprendre ce ton dans les accroches, en français.
 - Suivre ce qui buzze sur GTA 6 (presse jeu vidéo, YouTube, X, TikTok) et réagir dans les 24 à 48 h.
+
+## Mèmes (post réaction)
+
+- Format TikTok classique : une capture du jeu, une légende dans une bulle blanche arrondie au-dessus, une petite réplique entre parenthèses en bas à droite (« (je suis foutu) »). Rendu : `python3 outils/meme.py posts/<dossier>/spec.json` (exemple : `outils/exemple-meme/spec.json`).
+- Un post mème = un carrousel de 3 à 5 mèmes sur un même thème (« POV : … »), pour garder les gens plus longtemps.
+- Captures : uniquement celles de Romain, dans `banque/`. Une capture utilisée est ajoutée à `banque/utilisees.txt`.
+- Légendes : écrites par nous, courtes (2 à 3 lignes), sur des situations que tous les joueurs vivent (Jason et Lucia en couple, la police, les voitures, l'attente de 13 ans, les quêtes ratées). On s'inspire des thèmes qui font rire sur Reddit, X et TikTok, jamais d'un mème recopié ni du texte d'un autre créateur.
+- Pas d'emoji, pas de @, rien de sexuel ni d'humiliant sur une vraie personne.
