@@ -1,0 +1,92 @@
+{
+ "sujet": "La marque Karin de GTA = Toyota : modèles qu'on veut dans GTA 6 (Partie 2 : les 4x4)",
+ "slides": [
+  {
+   "type": "hook",
+   "sticker": "KARIN = TOYOTA",
+   "pac": "Partie 2 : les 4x4",
+   "title": "Les Toyota<br>qu'on veut dans<br><span class='y'>GTA 6</span>",
+   "title_size": 124,
+   "visual": {
+    "kind": "image",
+    "src": "img/g_anarchor.jpg",
+    "height": 470
+   },
+   "pill": "LA MARQUE KARIN, C'EST TOYOTA"
+  },
+  {
+   "type": "versus",
+   "sticker": "MODÈLE 1/4",
+   "pac": "Version GTA du",
+   "title": "Land Cruiser 250",
+   "chip": "SON NOM DANS GTA : KARIN BEEJAY 300DX",
+   "photos": [
+    {
+     "src": "img/g_beejay.jpg",
+     "label": "VERSION GTA"
+    },
+    {
+     "src": "img/r_beejay.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "versus",
+   "sticker": "MODÈLE 2/4",
+   "pac": "Version GTA du",
+   "title": "Tacoma TRD Pro",
+   "chip": "SON NOM DANS GTA : KARIN REBEL 4-XX",
+   "photos": [
+    {
+     "src": "img/g_rebel.jpg",
+     "label": "VERSION GTA"
+    },
+    {
+     "src": "img/r_rebel.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "versus",
+   "sticker": "MODÈLE 3/4",
+   "pac": "Version GTA du",
+   "title": "Land Cruiser GR",
+   "chip": "SON NOM DANS GTA : KARIN ANARCHOR 400",
+   "photos": [
+    {
+     "src": "img/g_anarchor.jpg",
+     "label": "VERSION GTA"
+    },
+    {
+     "src": "img/r_anarchor.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "versus",
+   "sticker": "MODÈLE 4/4",
+   "pac": "Version GTA du",
+   "title": "Fortuner",
+   "chip": "SON NOM DANS GTA : KARIN BORNEO",
+   "photos": [
+    {
+     "src": "img/g_borneo.jpg",
+     "label": "VERSION GTA"
+    },
+    {
+     "src": "img/r_borneo.jpg",
+     "label": "VRAIE VIE"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "pac": "Lequel tu veux ?",
+   "comment": "Dis-moi en commentaire lequel<br>tu veux dans GTA 6. Partie 3 demain.",
+   "share": "Envoie-le à ton pote<br>fan de Toyota"
+  }
+ ]
+}

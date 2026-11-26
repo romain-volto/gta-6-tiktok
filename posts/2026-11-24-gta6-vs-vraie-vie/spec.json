@@ -3,23 +3,17 @@
  "slides": [
   {
    "type": "hook",
-   "sticker": "GTA 6 VS VRAIE VIE",
-   "pac": "Rockstar a tout copié",
-   "title": "Ces voitures<br>de GTA 6 existent<br><span class='y'>en vrai</span>",
-   "title_size": 124,
-   "visual": {
-    "kind": "image",
-    "src": "img/g_porsche.jpg",
-    "height": 470
-   },
-   "pill": "DEVINE AVANT DE SWIPER"
+   "label": "GTA VI · Rockstar a tout copié",
+   "chip": "GTA 6 VS VRAIE VIE",
+   "title": "Ces voitures<br>de GTA 6 existent<br><g>en vrai</g>",
+   "title_size": 112,
+   "image": "img/g_porsche.jpg",
+   "pill": "DEVINE AVANT DE SWIPER →"
   },
   {
    "type": "versus",
-   "sticker": "VOITURE 1/4",
-   "pac": "Le double du",
+   "tag": "VOITURE 1/4",
    "title": "BMW X5",
-   "chip": "LE SUV DE LUXE ALLEMAND",
    "photos": [
     {
      "src": "img/g_bmw.jpg",
@@ -29,14 +23,13 @@
      "src": "img/r_bmw.jpg",
      "label": "VRAIE VIE"
     }
-   ]
+   ],
+   "caption": "Le SUV de luxe allemand"
   },
   {
    "type": "versus",
-   "sticker": "VOITURE 2/4",
-   "pac": "Le double de la",
+   "tag": "VOITURE 2/4",
    "title": "Porsche 911",
-   "chip": "LA SPORTIVE CULTE",
    "photos": [
     {
      "src": "img/g_porsche.jpg",
@@ -46,14 +39,13 @@
      "src": "img/r_porsche.jpg",
      "label": "VRAIE VIE"
     }
-   ]
+   ],
+   "caption": "La sportive culte"
   },
   {
    "type": "versus",
-   "sticker": "VOITURE 3/4",
-   "pac": "Le double du",
+   "tag": "VOITURE 3/4",
    "title": "Mercedes GLS",
-   "chip": "LE SUV GÉANT DE MERCEDES",
    "photos": [
     {
      "src": "img/g_mercedes.jpg",
@@ -63,14 +55,13 @@
      "src": "img/r_mercedes.jpg",
      "label": "VRAIE VIE"
     }
-   ]
+   ],
+   "caption": "Le SUV géant de Mercedes"
   },
   {
    "type": "versus",
-   "sticker": "VOITURE 4/4",
-   "pac": "Le double du",
+   "tag": "VOITURE 4/4",
    "title": "Dodge Durango",
-   "chip": "LE SUV MUSCLÉ AMÉRICAIN",
    "photos": [
     {
      "src": "img/g_durango.jpg",
@@ -80,13 +71,14 @@
      "src": "img/r_durango.jpg",
      "label": "VRAIE VIE"
     }
-   ]
+   ],
+   "caption": "Le SUV musclé américain"
   },
   {
    "type": "cta",
-   "pac": "Laquelle tu prends ?",
-   "comment": "Dis-moi en commentaire laquelle<br>tu conduis en premier.",
-   "share": "Envoie-le à ton pote<br>fan de voitures"
+   "title": "Laquelle tu prends&nbsp;?",
+   "comment": "Dis-moi en commentaire laquelle tu conduis en premier.",
+   "share": "Envoie-le à ton pote fan de voitures"
   }
  ]
 }

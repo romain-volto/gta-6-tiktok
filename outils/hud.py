@@ -10,8 +10,9 @@ Dans tous les textes, <g>mot</g> met le mot en dégradé chaud.
 
 Types de slides (champ "type") :
 - "hook"  : accroche. Champs : label, sub (petit texte en haut à gauche), hud {plus, amount, stars} (facultatif, en haut à droite),
-            chip, title, puis UN visuel au choix : wheel {left:{icon,l1,l2}, right:{icon,l1,l2}, center:[l1,l2], hint}
-            | bignum {num, text} | image "img/x.jpg" | icon "nom". Puis pill (pastille en bas, ex. « L'ASTUCE EN 3 ÉTAPES → »).
+            chip, title, title_size, puis UN visuel au choix : wheel {left:{icon,l1,l2}, right:{icon,l1,l2}, center:[l1,l2], hint}
+            | bignum {num, text} | image "img/x.jpg" (+ image_top, image_height, image_fit "cover" ou "contain") | icon "nom".
+            Puis pill (pastille en bas, ex. « L'ASTUCE EN 3 ÉTAPES → »).
 - "steps" : étape. Champs : tag (ex. MISSION), step (ex. ÉTAPE 1/3), title, points [{icon, text}] (3 max conseillé,
             le dernier est mis en avant), warn {title, text} (facultatif), next (pastille du bas, facultatif).
 - "photo" : photo du jeu. Champs : tag, title, image, caption (facultatif), next (facultatif).
@@ -181,13 +182,13 @@ def warn_box(w):
             f'<div style="font:800 34px/1.3 Inter;margin-top:8px">{w.get("text", "")}</div></div></div></div>')
 
 
-def photo_box(base, src, h, label=None, first=True):
+def photo_box(base, src, h, label=None, first=True, fit="cover"):
     lab = ""
     if label:
         bgc = "linear-gradient(90deg,#FFB13D,#FF5A36)" if first else "rgba(42,8,14,.85)"
         lab = f'<div style="position:absolute;left:22px;top:22px;background:{bgc};color:#fff;font:900 28px Inter;letter-spacing:3px;padding:10px 18px;border-radius:12px;text-transform:uppercase">{label}</div>'
     return (f'<div style="position:relative;height:{h}px;border-radius:30px;overflow:hidden;border:3px solid rgba(255,230,200,.55);box-shadow:0 0 50px rgba(255,90,54,.35)">'
-            f'<img src="{img_uri(base, src)}" style="width:100%;height:100%;object-fit:cover;display:block">{lab}</div>')
+            f'<img src="{img_uri(base, src)}" style="width:100%;height:100%;object-fit:{fit};display:block;background:rgba(20,4,8,.6)">{lab}</div>')
 
 
 def body(s, base, n, total):
@@ -201,7 +202,9 @@ def body(s, base, n, total):
         if s.get("wheel"):
             out += f'<div class="abs" style="top:690px;left:160px">{wheel(s["wheel"])}</div>' + pill(s.get("pill"), 1430)
         elif s.get("image"):
-            out += f'<div class="content" style="top:740px">{photo_box(base, s["image"], 620)}</div>' + pill(s.get("pill"), 1410)
+            top, h = s.get("image_top", 740), s.get("image_height", 620)
+            out += f'<div class="content" style="top:{top}px">{photo_box(base, s["image"], h, fit=s.get("image_fit", "cover"))}</div>'
+            out += pill(s.get("pill"), 1410) if top + h <= 1390 else ""
         elif s.get("bignum"):
             bn = s["bignum"]
             out += (f'<div class="content" style="top:800px;display:flex;align-items:center;justify-content:center;gap:34px">'

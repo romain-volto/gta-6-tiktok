@@ -3,23 +3,17 @@
  "slides": [
   {
    "type": "hook",
-   "sticker": "KARIN = TOYOTA",
-   "pac": "Partie 2 : les 4x4",
-   "title": "Les Toyota<br>qu'on veut dans<br><span class='y'>GTA 6</span>",
-   "title_size": 124,
-   "visual": {
-    "kind": "image",
-    "src": "img/g_anarchor.jpg",
-    "height": 470
-   },
-   "pill": "LA MARQUE KARIN, C'EST TOYOTA"
+   "label": "GTA VI · Partie 2 : les 4x4",
+   "chip": "KARIN = TOYOTA",
+   "title": "Les Toyota<br>qu'on veut dans<br><g>GTA 6</g>",
+   "title_size": 112,
+   "image": "img/g_anarchor.jpg",
+   "pill": "LA MARQUE KARIN, C'EST TOYOTA →"
   },
   {
    "type": "versus",
-   "sticker": "MODÈLE 1/4",
-   "pac": "Version GTA du",
+   "tag": "MODÈLE 1/4",
    "title": "Land Cruiser 250",
-   "chip": "SON NOM DANS GTA : KARIN BEEJAY 300DX",
    "photos": [
     {
      "src": "img/g_beejay.jpg",
@@ -29,14 +23,13 @@
      "src": "img/r_beejay.jpg",
      "label": "VRAIE VIE"
     }
-   ]
+   ],
+   "caption": "Son nom dans GTA&nbsp;: <b>Karin BeeJay 300DX</b>"
   },
   {
    "type": "versus",
-   "sticker": "MODÈLE 2/4",
-   "pac": "Version GTA du",
+   "tag": "MODÈLE 2/4",
    "title": "Tacoma TRD Pro",
-   "chip": "SON NOM DANS GTA : KARIN REBEL 4-XX",
    "photos": [
     {
      "src": "img/g_rebel.jpg",
@@ -46,14 +39,13 @@
      "src": "img/r_rebel.jpg",
      "label": "VRAIE VIE"
     }
-   ]
+   ],
+   "caption": "Son nom dans GTA&nbsp;: <b>Karin Rebel 4-XX</b>"
   },
   {
    "type": "versus",
-   "sticker": "MODÈLE 3/4",
-   "pac": "Version GTA du",
+   "tag": "MODÈLE 3/4",
    "title": "Land Cruiser GR",
-   "chip": "SON NOM DANS GTA : KARIN ANARCHOR 400",
    "photos": [
     {
      "src": "img/g_anarchor.jpg",
@@ -63,14 +55,13 @@
      "src": "img/r_anarchor.jpg",
      "label": "VRAIE VIE"
     }
-   ]
+   ],
+   "caption": "Son nom dans GTA&nbsp;: <b>Karin Anarchor 400</b>"
   },
   {
    "type": "versus",
-   "sticker": "MODÈLE 4/4",
-   "pac": "Version GTA du",
+   "tag": "MODÈLE 4/4",
    "title": "Fortuner",
-   "chip": "SON NOM DANS GTA : KARIN BORNEO",
    "photos": [
     {
      "src": "img/g_borneo.jpg",
@@ -80,13 +71,14 @@
      "src": "img/r_borneo.jpg",
      "label": "VRAIE VIE"
     }
-   ]
+   ],
+   "caption": "Son nom dans GTA&nbsp;: <b>Karin Borneo</b>"
   },
   {
    "type": "cta",
-   "pac": "Lequel tu veux ?",
-   "comment": "Dis-moi en commentaire lequel<br>tu veux dans GTA 6. Partie 3 demain.",
-   "share": "Envoie-le à ton pote<br>fan de Toyota"
+   "title": "Lequel tu veux&nbsp;?",
+   "comment": "Dis-moi en commentaire lequel tu veux dans GTA 6. Partie 3 demain.",
+   "share": "Envoie-le à ton pote fan de Toyota"
   }
  ]
 }

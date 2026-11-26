@@ -1,0 +1,26 @@
+{
+ "sujet": "Ocean Beach : GTA Vice City (2002) vs GTA 6 (2026), comparaison de Romain",
+ "slides": [
+  {
+   "type": "custom",
+   "sticker": "OCEAN BEACH",
+   "html": "<h2 class='fit' style='margin-top:40px;font-size:130px'><span class='y'>24 ans</span> d'écart</h2><div class='photo' style='margin:26px auto 0;width:870px;height:1085px'><img src='file:///home/claude/gta-6-tiktok/posts/2026-11-26-vice-city-2002-vs-2026/img/comparaison.jpg' alt=''></div>"
+  },
+  {
+   "type": "custom",
+   "sticker": "GTA VICE CITY",
+   "html": "<h2 class='fit' style='margin-top:40px;font-size:130px'>En <span class='y'>2002</span></h2><div class='photo' style='margin:26px auto 0;width:870px;height:1085px'><img src='file:///home/claude/gta-6-tiktok/posts/2026-11-26-vice-city-2002-vs-2026/img/2002.jpg' alt=''></div>"
+  },
+  {
+   "type": "custom",
+   "sticker": "GTA 6",
+   "html": "<h2 class='fit' style='margin-top:40px;font-size:130px'>En <span class='y'>2026</span></h2><div class='photo' style='margin:26px auto 0;width:870px;height:1085px'><img src='file:///home/claude/gta-6-tiktok/posts/2026-11-26-vice-city-2002-vs-2026/img/2026.jpg' alt=''></div>"
+  },
+  {
+   "type": "cta",
+   "pac": "Team 2002 ou 2026&nbsp;?",
+   "comment": "Dis-moi en commentaire<br>ta préférée.",
+   "share": "Envoie-le à ton pote<br>qui jouait à Vice City"
+  }
+ ]
+}

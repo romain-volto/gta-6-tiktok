@@ -3,23 +3,17 @@
  "slides": [
   {
    "type": "hook",
-   "sticker": "KARIN = TOYOTA",
-   "pac": "Partie 1 : les sportives",
-   "title": "Les Toyota<br>qu'on veut dans<br><span class='y'>GTA 6</span>",
-   "title_size": 124,
-   "visual": {
-    "kind": "image",
-    "src": "img/g_sento.jpg",
-    "height": 470
-   },
-   "pill": "LA MARQUE KARIN, C'EST TOYOTA"
+   "label": "GTA VI · Partie 1 : les sportives",
+   "chip": "KARIN = TOYOTA",
+   "title": "Les Toyota<br>qu'on veut dans<br><g>GTA 6</g>",
+   "title_size": 112,
+   "image": "img/g_sento.jpg",
+   "pill": "LA MARQUE KARIN, C'EST TOYOTA →"
   },
   {
    "type": "versus",
-   "sticker": "MODÈLE 1/3",
-   "pac": "Version GTA de la",
+   "tag": "MODÈLE 1/3",
    "title": "Corolla GR",
-   "chip": "SON NOM DANS GTA : KARIN SENTO RS",
    "photos": [
     {
      "src": "img/g_sento.jpg",
@@ -29,14 +23,13 @@
      "src": "img/r_sento.jpg",
      "label": "VRAIE VIE"
     }
-   ]
+   ],
+   "caption": "Son nom dans GTA&nbsp;: <b>Karin Sento RS</b>"
   },
   {
    "type": "versus",
-   "sticker": "MODÈLE 2/3",
-   "pac": "Version GTA de la",
+   "tag": "MODÈLE 2/3",
    "title": "GR GT",
-   "chip": "SON NOM DANS GTA : KARIN AIKO R",
    "photos": [
     {
      "src": "img/g_aiko.jpg",
@@ -46,14 +39,13 @@
      "src": "img/r_aiko.jpg",
      "label": "VRAIE VIE"
     }
-   ]
+   ],
+   "caption": "Son nom dans GTA&nbsp;: <b>Karin Aiko R</b>"
   },
   {
    "type": "versus",
-   "sticker": "MODÈLE 3/3",
-   "pac": "Version GTA de la",
+   "tag": "MODÈLE 3/3",
    "title": "Corolla GR berline",
-   "chip": "SON NOM DANS GTA : KARIN FUTO RS",
    "photos": [
     {
      "src": "img/g_futo.jpg",
@@ -63,13 +55,14 @@
      "src": "img/r_futo.jpg",
      "label": "VRAIE VIE"
     }
-   ]
+   ],
+   "caption": "Son nom dans GTA&nbsp;: <b>Karin Futo RS</b>"
   },
   {
    "type": "cta",
-   "pac": "Laquelle tu veux ?",
-   "comment": "Dis-moi en commentaire laquelle<br>tu veux dans GTA 6. Partie 2 demain.",
-   "share": "Envoie-le à ton pote<br>fan de Toyota"
+   "title": "Laquelle tu veux&nbsp;?",
+   "comment": "Dis-moi en commentaire laquelle tu veux dans GTA 6. Partie 2 demain.",
+   "share": "Envoie-le à ton pote fan de Toyota"
   }
  ]
 }
