@@ -19,6 +19,9 @@ Types de slides (champ "type") :
 - "versus": deux photos. Champs : tag, title, photos [{src, label}, {src, label}], caption (facultatif).
 - "rows"  : liste. Champs : tag, title, rows [{k, v}] (ex. code et effet), next (facultatif).
 - "cta"   : fin. Champs : title (question qui divise), comment, share.
+- "meme"  : mème 100 % maison (sans capture). Champs : setup (bulle blanche en haut, ex. « POV : … »), variant :
+            "echec" (gros MISSION ÉCHOUÉE + reason), "notifs" (notifs [{app, text}] façon téléphone),
+            "stars" (étoiles de recherche : stars 1-5, label, reason), "wheel" (wheel comme dans hook).
 Icônes : moon, heli, fox, cash, smg, star, pin, car, key, eye, trophy, flame, lock, map, phone.
 """
 import json, math, pathlib, sys
@@ -56,6 +59,7 @@ body{{position:relative;font-family:Inter;color:#fff;-webkit-font-smoothing:anti
 .dot{{width:16px;height:16px;border-radius:50%;background:{B};box-shadow:0 0 12px {B}}}
 b,.hl{{color:{A};font-weight:900}}
 .content{{position:absolute;left:70px;right:70px}}
+.bub{{display:inline;background:#fff;color:#111;font:800 52px/1.34 Inter;padding:6px 18px;border-radius:18px;-webkit-box-decoration-break:clone;box-decoration-break:clone}}
 """
 
 # ------------------------------------------------------------------ icônes (blanches, viewBox 0 0 64 64)
@@ -263,6 +267,31 @@ def body(s, base, n, total):
                 f'<div style="font:900 42px/1.25 Inter">{s.get("share", "Envoie-le à ton pote qui joue à GTA 6")}</div></div>'
                 '<div style="display:flex;gap:24px;margin-top:26px"><div class="glass" style="flex:1;text-align:center;padding:26px;font:900 38px Inter">Enregistre</div>'
                 '<div class="glass" style="flex:1;text-align:center;padding:26px;font:900 38px Inter">Abonne-toi</div></div></div>')
+    elif t == "meme":
+        out += f'<div class="content fitbox" style="top:250px;text-align:center"><span class="bub">{s.get("setup", "")}</span></div>'
+        v = s.get("variant", "echec")
+        if v == "echec":
+            out += ('<div class="content" style="top:820px;text-align:center">'
+                    '<div style="height:10px;background:linear-gradient(90deg,transparent,#FF5A36,transparent)"></div>'
+                    '<div class="big fit" style="font-size:150px;margin:40px 0 30px;color:#FF5A36;-webkit-text-stroke:5px #3A0408;paint-order:stroke fill">Mission échouée</div>'
+                    f'<div style="font:800 52px/1.3 Inter;text-shadow:0 3px 14px rgba(0,0,0,.6)">{s.get("reason", "")}</div>'
+                    '<div style="height:10px;margin-top:40px;background:linear-gradient(90deg,transparent,#FF5A36,transparent)"></div></div>')
+        elif v == "notifs":
+            out += '<div class="content" style="top:720px">'
+            for k, nt in enumerate(s.get("notifs", [])[:4]):
+                out += ('<div style="display:flex;gap:22px;align-items:center;padding:24px 26px;border-radius:30px;background:rgba(255,246,238,.92);color:#2A0E08;margin-bottom:22px;box-shadow:0 14px 40px rgba(40,6,0,.35)">'
+                        f'<div class="gbg" style="flex:0 0 76px;height:76px;border-radius:20px;display:flex;align-items:center;justify-content:center">{icon(nt.get("icon", "phone"), 46)}</div>'
+                        f'<div style="flex:1"><div style="display:flex;justify-content:space-between;font:900 22px Inter;letter-spacing:2px;opacity:.6;text-transform:uppercase"><span>{nt.get("app", "")}</span><span>maintenant</span></div>'
+                        f'<div style="font:800 36px/1.25 Inter;margin-top:6px">{nt.get("text", "")}</div></div></div>')
+            out += "</div>"
+        elif v == "stars":
+            n = s.get("stars", 5)
+            st = "".join(f'<svg width="150" height="150" viewBox="0 0 100 100" style="{"filter:drop-shadow(0 0 22px rgba(255,220,170,.9))" if i < n else "opacity:.4"}"><polygon points="{star_points(50, 54, 5, 48, 20)}" fill="{"#FFF3E0" if i < n else "none"}" stroke="#FFF3E0" stroke-width="6" stroke-linejoin="round"/></svg>' for i in range(5))
+            out += (f'<div class="content" style="top:820px;text-align:center"><div class="lab" style="font-size:34px">{s.get("label", "Niveau de recherche")}</div>'
+                    f'<div style="display:flex;justify-content:center;gap:16px;margin-top:30px">{st}</div>'
+                    f'<div style="font:800 50px/1.3 Inter;margin-top:44px;text-shadow:0 3px 14px rgba(0,0,0,.6)">{s.get("reason", "")}</div></div>')
+        elif v == "wheel" and s.get("wheel"):
+            out += f'<div class="abs" style="top:700px;left:160px">{wheel(s["wheel"])}</div>'
     # points de progression
     dots = "".join(f'<div style="flex:1;height:8px;border-radius:4px;{"background:linear-gradient(90deg,#FFB13D,#FF5A36)" if i < n else "background:rgba(255,240,225,.25)"}"></div>' for i in range(total))
     out += f'<div class="abs" style="top:1520px;left:70px;right:70px;display:flex;gap:10px">{dots}</div>'

@@ -1,0 +1,13 @@
+{
+ "sujet": "Exemple de mèmes GTA 6 sans capture (style HUD)",
+ "slides": [
+  {"type": "meme", "variant": "echec", "setup": "POV : tu dis à ta copine « juste une mission sur GTA 6 »", "reason": "Il est 4 h du matin."},
+  {"type": "meme", "variant": "notifs", "setup": "Le lendemain de la sortie de GTA 6",
+   "notifs": [{"app": "Ton boss", "icon": "phone", "text": "Toujours malade aujourd'hui ?"},
+              {"app": "Maman", "icon": "phone", "text": "Tu sors de ta chambre quand ?"},
+              {"app": "Xbox", "icon": "star", "text": "Tu as joué 14 h d'affilée. Une pause ?"}]},
+  {"type": "meme", "variant": "stars", "setup": "Moi à Vice City après avoir juste klaxonné une voiture de police", "stars": 5, "label": "Niveau de recherche", "reason": "(je voulais juste passer)"},
+  {"type": "meme", "variant": "wheel", "setup": "Moi devant ma première mission de GTA 6",
+   "wheel": {"left": {"icon": "flame", "l1": "Faire", "l2": "la mission"}, "right": {"icon": "car", "l1": "Rouler", "l2": "à 30 km/h"}, "center": ["ON VERRA", "DEMAIN"]}}
+ ]
+}
