@@ -21,7 +21,9 @@ Types de slides (champ "type") :
 - "cta"   : fin. Champs : title (question qui divise), comment, share.
 - "meme"  : mème 100 % maison (sans capture). Champs : setup (bulle blanche en haut, ex. « POV : … »), variant :
             "echec" (gros MISSION ÉCHOUÉE + reason), "notifs" (notifs [{app, text}] façon téléphone),
-            "stars" (étoiles de recherche : stars 1-5, label, reason), "wheel" (wheel comme dans hook).
+            "stars" (étoiles de recherche : stars 1-5, label, reason), "wheel" (wheel comme dans hook),
+            "objectif" (liste d'objectifs de mission : label, objectifs [texte], faits = nb cochés, note en dégradé
+            dessous, ex. « Lucia va apprécier. »).
 Icônes : moon, heli, fox, cash, smg, star, pin, car, key, eye, trophy, flame, lock, map, phone.
 """
 import json, math, pathlib, sys
@@ -292,6 +294,24 @@ def body(s, base, n, total):
                     f'<div style="font:800 50px/1.3 Inter;margin-top:44px;text-shadow:0 3px 14px rgba(0,0,0,.6)">{s.get("reason", "")}</div></div>')
         elif v == "wheel" and s.get("wheel"):
             out += f'<div class="abs" style="top:700px;left:160px">{wheel(s["wheel"])}</div>'
+        elif v == "objectif":
+            # Écran d'objectifs de mission (format « Lucia va apprécier »)
+            out += ('<div class="content" style="top:640px"><div class="chip"><span class="dot"></span>'
+                    f'{s.get("label", "Nouvel objectif")}</div><div class="glass" style="margin-top:28px;padding:16px 38px 30px">')
+            for k, o in enumerate(s.get("objectifs", [])[:4]):
+                done = k < s.get("faits", 0)
+                box = ('<div class="gbg" style="flex:0 0 54px;height:54px;border-radius:12px;display:flex;align-items:center;justify-content:center">'
+                       '<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></div>'
+                       if done else '<div style="flex:0 0 54px;height:54px;border-radius:12px;border:4px solid rgba(255,240,225,.75)"></div>')
+                sep = "border-top:2px solid rgba(255,230,200,.14);" if k else ""
+                deco = "text-decoration:line-through;text-decoration-thickness:4px;opacity:.85;" if done else ""
+                out += (f'<div style="display:flex;gap:26px;align-items:center;padding:24px 0;{sep}">{box}'
+                        f'<div style="font:800 42px/1.25 Inter;{deco}">{o}</div></div>')
+            out += "</div>"
+            if s.get("note"):
+                out += (f'<div class="big fit" style="font-size:{s.get("note_size", 96)}px;margin-top:40px;text-align:center">'
+                        f'<span class="gbg" style="display:inline-block;padding:8px 40px 14px;border-radius:28px;color:#fff;box-shadow:0 0 50px {GLOW}">{s["note"]}</span></div>')
+            out += "</div>"
     # points de progression
     dots = "".join(f'<div style="flex:1;height:8px;border-radius:4px;{"background:linear-gradient(90deg,#FFB13D,#FF5A36)" if i < n else "background:rgba(255,240,225,.25)"}"></div>' for i in range(total))
     out += f'<div class="abs" style="top:1520px;left:70px;right:70px;display:flex;gap:10px">{dots}</div>'

@@ -105,3 +105,20 @@ Ce qui compte pour TikTok en 2026, dans l'ordre : temps passé et taux de compl�
 - Sans capture : mèmes 100 % maison avec le type `meme` de `hud.py` (variantes `echec` « MISSION ÉCHOUÉE », `notifs` notifications de téléphone, `stars` niveau de recherche, `wheel` roue de choix). Exemple : `outils/exemple-meme-hud/spec.json`. On ne dessine jamais Jason, Lucia ni un autre personnage du jeu.
 - Légendes : écrites par nous, courtes (2 à 3 lignes), sur des situations que tous les joueurs vivent (Jason et Lucia en couple, la police, les voitures, l'attente de 13 ans, les quêtes ratées). On s'inspire des thèmes qui font rire sur Reddit, X et TikTok, jamais d'un mème recopié ni du texte d'un autre créateur.
 - Pas d'emoji, pas de @, rien de sexuel ni d'humiliant sur une vraie personne.
+
+### Recette d'un mème qui fait rire
+- Une seule idée, compréhensible en 2 secondes. Légende de 15 mots maximum.
+- Le décalage : la vraie vie d'un côté, GTA 6 de l'autre (« Mon boss qui pense que je suis au lit avec 40 de fièvre » sur une image de Jason tranquille au barbecue).
+- La chute arrive en dernier (réplique entre parenthèses ou note en bas) et retourne la situation.
+- Un détail précis rend la blague crédible : « 40 de fièvre », « il est 4 h du matin », « GTA 6 est sorti il y a 8 jours ».
+- Une situation que tous les joueurs vivent, pour qu'ils taguent un pote. Pas de blague qu'il faut expliquer.
+
+### Thèmes qui marchent le mieux en ce moment (fin novembre 2026, à mettre à jour avec la veille)
+- Arrêt maladie, boss et collègues depuis la sortie du 19 novembre (« tout le bureau malade le même jour »).
+- La copine et la vie de couple : disparaître un mois, « juste une mission », elle qui te voit faire la vaisselle dans le jeu.
+- « Lucia va apprécier » : les objectifs du début du jeu (réparer la maison, faire les courses, acheter des fleurs) détournés. On le fait avec la variante `objectif` de `hud.py` (ex. « Ma copine : « tu fais jamais rien à la maison » » + objectifs cochés + « Lucia va apprécier. »).
+- Faire dans le jeu ce qu'on ne fait pas dans la vraie vie (courses, ménage, réparer la maison).
+- Jason impassible, quoi qu'il arrive.
+- Les galères de joueur : stockage plein le jour J, 5 étoiles pour un klaxon, la voiture tunée crashée en sortant du garage.
+- Les clips absurdes du jeu (PNJ, portière ouverte sur un cycliste, accidents qui finissent en figure).
+- À éviter : « We got X before GTA 6 » (mort depuis la sortie), le débat « woke » autour de Lucia, les vraies personnes et les polémiques.
