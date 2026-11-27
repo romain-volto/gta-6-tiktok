@@ -1,0 +1,119 @@
+{
+ "sujet": "Voiture gratuite : la Pfister Growler rose de Vanessa et le garage de La Perle (code 92665, chapitre 3)",
+ "slides": [
+  {
+   "type": "hook",
+   "label": "GTA VI · Chapitre 3",
+   "sub": "La Perle, Vice City",
+   "hud": {
+    "plus": "+ 1 GARAGE",
+    "amount": "$0",
+    "stars": 0
+   },
+   "chip": "Personne ne la trouve",
+   "title": "Voiture<br><g>gratuite</g>&nbsp;?",
+   "bignum": {
+    "num": "0$",
+    "text": "Sportive<br>rose<br><g>+ garage</g>"
+   },
+   "pill": "LE CODE DU GARAGE EN SLIDE 4 →"
+  },
+  {
+   "type": "steps",
+   "tag": "Mission",
+   "step": "Étape 1/4",
+   "title": "Le <g>portable</g>",
+   "points": [
+    {
+     "icon": "key",
+     "text": "Au chapitre 3, va dans <b>l'appartement de Boobie</b> à Vice City."
+    },
+    {
+     "icon": "phone",
+     "text": "Dans la chambre, allume <b>son ordinateur portable</b>."
+    },
+    {
+     "icon": "lock",
+     "text": "Il demande un mot de passe&nbsp;: <b>3 indices</b> sont cachés dans l'appart."
+    }
+   ],
+   "next": "LES 3 INDICES ARRIVENT →"
+  },
+  {
+   "type": "rows",
+   "tag": "Mission",
+   "step": "Étape 2/4",
+   "title": "Mot de <g>passe</g>",
+   "rows": [
+    {
+     "k": "1",
+     "v": "Photo du chien près de la cuisine&nbsp;: <b>Muffins</b>"
+    },
+    {
+     "k": "2",
+     "v": "Dessin du chien avec une couronne&nbsp;: <b>Queen</b>"
+    },
+    {
+     "k": "3",
+     "v": "Au dos du dessin, « Class of '15 »&nbsp;: <b>15</b>"
+    },
+    {
+     "k": "=",
+     "v": "Tape <b>MuffinsQueen15</b>"
+    }
+   ],
+   "next": "LE CODE DU GARAGE, SLIDE SUIVANTE →"
+  },
+  {
+   "type": "steps",
+   "tag": "Mission",
+   "step": "Étape 3/4",
+   "title": "Le <g>code</g>",
+   "points": [
+    {
+     "icon": "phone",
+     "text": "Ouvre l'appli <b>WhatUp</b> et la conversation <b>sans nom</b>."
+    },
+    {
+     "icon": "eye",
+     "text": "Un message parle d'un garage à <b>La Perle</b>, près d'<b>Auntie's Place</b>."
+    },
+    {
+     "icon": "key",
+     "text": "Le code du garage&nbsp;: <b>92665</b>"
+    }
+   ],
+   "next": "OÙ EST LE GARAGE →"
+  },
+  {
+   "type": "steps",
+   "tag": "Mission",
+   "step": "Étape 4/4",
+   "title": "Le <g>garage</g>",
+   "points": [
+    {
+     "icon": "pin",
+     "text": "Va à <b>Twa Ponya Tattoo</b>, au sud de La Perle."
+    },
+    {
+     "icon": "map",
+     "text": "Traverse la rue&nbsp;: parking <b>derrière Auntie's Place</b>."
+    },
+    {
+     "icon": "car",
+     "text": "Porte grise avec <b>un nœud rose</b> peint&nbsp;: tape 92665. La <b>Growler</b> est à toi."
+    }
+   ],
+   "warn": {
+    "title": "Fais-le pendant le chapitre 3",
+    "text": "Selon certains guides, le garage ne s'ouvre plus après."
+   }
+  },
+  {
+   "type": "cta",
+   "title": "Tu l'avais<br><g>trouvée&nbsp;?</g>",
+   "comment": "Réponds oui ou non en commentaire.",
+   "share": "Envoie-le à ton pote qui est au chapitre 3"
+  }
+ ]
+}
