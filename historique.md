@@ -42,9 +42,21 @@ Ajouter une ligne à chaque post créé : date, heure, dossier, sujet, statut.
 | 2026-11-27 | 15:00 | posts/2026-11-27-growler-rose-gratuite | Voiture gratuite : Pfister Growler rose de Vanessa, garage de La Perle (mot de passe MuffinsQueen15, code 92665, chapitre 3) | programmé (validé par Romain à 9 h 35), décalé à 15 h pour espacer de 3 h avec 12 h et 18 h, id Metricool 444065985 |
 | 2026-11-27 | 12:00 | posts/2026-11-27-meme-lucia-prison | Mème : « Moi qui laisse Lucia en prison pour vivre ma meilleure vie avec Jason » / « (elle comprendra) » (image IMG_4639, titre anglais de Game Hero traduit ; remplace le mème « Lucia et les conv » refusé par Romain, pas assez drôle) | programmé (validé par Romain à 9 h 40, logo Game Hero retiré : image de Romain), id Metricool 444072808 |
 
-## Idées prioritaires (recherches TikTok qui amènent des gens sur le compte, 27/11)
-À traiter en priorité pour l'astuce de 10 h ou le sujet de 18 h, une par jour, avec le mot-clé exact dans le titre et le début de la description. Barrer l'idée une fois postée.
+## Idées prioritaires (mises à jour le 27/11, à traiter avant les idées du jour)
+Une idée par créneau. Mot-clé exact dans le titre et le début de la description. Barrer l'idée (~~texte~~) une fois postée.
+
+### Sujet de 18 h (formats qui marchent, voir STYLE.md)
+- 28/11 : Mandy, tueuse en série ? (personnage qui fait débat). Indices relevés par les joueurs, à vérifier : doigt coupé dans l'évier, hachoir dans sa voiture, clin d'œil possible à Dexter. Slides avec « selon les joueurs ». Question finale : « Tueuse ou pas ? ». Captures de Mandy à demander à Romain (sinon version sans photo).
+- GTA 6 te laisse faire ça ? (découvertes inattendues)
+- Ce que tu ne savais pas sur GTA 6 (liste de détails cachés)
+- Vice City contre le vrai Miami : devine lequel est le vrai (seulement quand Romain aura mis des photos du vrai Miami dans la banque)
+- 10/12 à 18 h : GTA 6 nommé 8 fois aux Game Awards, va-t-il tout rafler ? Le 11/12 à 10 h : les résultats.
+
+### Astuce de 10 h (recherches TikTok qui amènent des gens sur le compte)
 - Que se passe-t-il si tu retournes chez Jason (« what happens if you go back to Jason's house »)
 - Voiture gratuite chez Moses
 - Comment avoir 50 000 $ dans GTA 6
 - Codes de triche GTA 6 (seulement s'ils sont vérifiés dans au moins deux sources)
+
+### À faire par Romain (vidéo)
+- « Valras-Plage en trailer GTA VI » : modèle CapCut « GTA VI TREND EDIT » (9 photos), avec ses propres photos.

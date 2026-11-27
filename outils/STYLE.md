@@ -97,6 +97,19 @@ Ce qui compte pour TikTok en 2026, dans l'ordre : temps passé et taux de compl�
 - Les plus gros comptes GTA 6 postent des découvertes à la première personne (« J'ai volé la voiture de Paul Walker dans GTA 6 », « J'ai trouvé un ours polaire ») et des « pro tips » très courts. Reprendre ce ton dans les accroches, en français.
 - Suivre ce qui buzze sur GTA 6 (presse jeu vidéo, YouTube, X, TikTok) et réagir dans les 24 à 48 h.
 
+## Formats qui marchent (veille du 27/11 : les faire tourner)
+Chaque format fait monter un chiffre différent. Mesures relevées sur TikTok après la sortie : les guides font 59 à 92 enregistrements pour 100 j'aime, les situations drôles 31 à 42 partages pour 100 j'aime.
+1. Guide pas à pas (enregistrements) : c'est l'astuce de 10 h. Un objectif chiffré, les étapes, l'endroit exact. Slide finale et description : « Enregistre-le pour ta partie ».
+2. Découverte inattendue (vues) : « GTA 6 te laisse faire ça ? ». Une découverte par slide, les plus folles d'abord (exemples relevés par la presse : l'aéroport où l'on peut entrer, repeindre les murs de sa maison au rouleau).
+3. Liste « Ce que tu ne savais pas sur GTA 6 » (commentaires) : 5 à 8 détails cachés, un par slide. Slide finale : « Ajoute celui que j'ai oublié en commentaire ».
+4. Personnage qui fait débat (commentaires) : en ce moment Mandy (la locataire de Brian, mission Pipework). On présente la théorie, les indices relevés par les joueurs et une question qui divise. On parle de l'histoire et de la théorie, jamais du physique du personnage, rien de sexuel.
+5. Situation drôle (partages) : c'est le mème du jour.
+6. Vice City contre le vrai Miami (commentaires) : « Devine lequel est le vrai ». Il faut des photos du vrai Miami envoyées par Romain dans banque/ ; sans elles, ne pas faire ce format.
+- Rotation : 10 h = guide (ou une idée prioritaire de historique.md), 12 h = mème, 18 h = un des formats 2, 3, 4 ou 6, jamais le même deux jours de suite.
+- Photos d'un carrousel : uniquement les captures de banque/ qui correspondent au sujet (les regarder avec Read pour les reconnaître). S'il n'y en a pas, faire une version sans photo (hook icon ou bignum, steps, rows) ou choisir un autre format, et demander à Romain dans le message du matin les captures précises qui manquent pour les prochains sujets.
+- Fins du jeu : pas de gros spoiler sur la miniature ni dans le titre (Rockstar fait retirer les spoilers). Si le post parle de la fin, slide 1 « Spoilers » et rien de révélé avant la slide 2.
+- Dates à ne pas rater : 10/12 (GTA 6 a 8 nominations aux Game Awards) et le lendemain matin pour les résultats.
+
 ## Miniature (slide 1)
 - La slide 1 est la miniature (photoCoverIndex 0). Sur le profil, TikTok la recadre au centre en 3:4 : environ 240 px coupés en haut et en bas. Tout ce qui compte (titre, chiffre, partie, visage ou voiture) doit être entre 300 et 1600 px de haut. Le petit label tout en haut n'apparaît pas sur la grille.
 - À la taille d'une case du profil (un tiers de la largeur du téléphone), il faut lire le titre en une seconde : 3 lignes maximum, mots courts, gros, contrasté. Les mots en dégradé ont un contour sombre pour rester lisibles.
@@ -109,7 +122,9 @@ Ce qui compte pour TikTok en 2026, dans l'ordre : temps passé et taux de compl�
   - Mème : le son drôle ou le son de trend du moment.
   - Astuce argent, braquage : rap ou trap qui monte.
   - Comparaison Vice City, nostalgie : son années 80 ou musique des trailers.
-- Repères fin novembre 2026 : « Suzuki » de Fuerza Regida (BO de GTA 6, plus de 3,5 millions de vidéos TikTok), « Love Is a Long Road » de Tom Petty (trailer 1), « Hot Together » des Pointer Sisters (trailer 2), « Go Easy » de Dua Lipa et « Crazy for You » de Lana Del Rey (BO du jeu).
+- Repères fin novembre 2026 : « Suzuki » de Fuerza Regida (BO de GTA 6, plus de 3,5 millions de vidéos TikTok), « Run Away With Me » de Carly Rae Jepsen (dans le jeu, écoutes en forte hausse depuis la sortie), « But I Think It's A Dream » de Captain & Tennille (bande-annonce longue, écoutes en forte hausse), « Love Is a Long Road » de Tom Petty (trailer 1), « Hot Together » des Pointer Sisters (trailer 2), « Go Easy » de Dua Lipa et « Crazy for You » de Lana Del Rey (BO du jeu).
+- Comment choisir dans TikTok : prendre le son dans la bibliothèque TikTok (pas un son importé), vérifier sur la page du son qu'il est utilisé par beaucoup de vidéos récentes, et qu'il colle à l'ambiance de la slide 1 (drôle, tension, nostalgie).
+- Vidéos de gameplay (quand Romain filmera sa Xbox) : couper la radio du jeu avant d'enregistrer. Les chansons sous licence des radios peuvent faire couper le son de la vidéo ; on ajoute la musique dans TikTok.
 
 ## Mèmes (post réaction)
 
