@@ -104,13 +104,12 @@ Ce qui compte pour TikTok en 2026, dans l'ordre : temps passé et taux de compl�
 - Vérification obligatoire avant publication : `python3 outils/grille.py posts/<dossier>` puis ouvrir /tmp/grille.jpg avec Read. Si le titre ne se lit pas, si la miniature se confond avec ses voisines ou si quelque chose d'important est coupé, corriger et relancer.
 
 ## Musique
-- Metricool ne permet pas de choisir le titre depuis le connecteur : on garde `autoAddMusic: true` (TikTok met une musique tendance tout seul).
-- Chaque matin, on propose à Romain, pour chaque post, un son tendance qui colle à GTA 6 et à l'ambiance du post. Après la publication, il peut le remplacer en quelques secondes dans l'appli TikTok (modifier le post, puis le son).
-- Où chercher : les sons de la bande originale de GTA 6 qui explosent sur TikTok (vérifier chaque matin avec la veille), les musiques des trailers, et les sons du moment dans le top TikTok France.
+- Publication manuelle (choix de Romain, 27/11) : les posts sont programmés dans Metricool avec `autoPublish: false` et `autoAddMusic: false`. À l'heure prévue, Romain reçoit une notification de l'appli Metricool : les images sont enregistrées dans sa galerie, le texte est copié, et il termine le post dans TikTok en choisissant lui-même la musique (toute la bibliothèque TikTok est disponible).
+- Chaque matin, on propose pour chaque post un son tendance qui colle à GTA 6 et à l'ambiance du post.
   - Mème : le son drôle ou le son de trend du moment.
   - Astuce argent, braquage : rap ou trap qui monte.
   - Comparaison Vice City, nostalgie : son années 80 ou musique des trailers.
-- Repères fin novembre 2026 : « Suzuki » de Fuerza Regida (titre de la BO de GTA 6, plus de 3,5 millions de vidéos TikTok), « Love Is a Long Road » de Tom Petty (trailer 1), « Hot Together » des Pointer Sisters (trailer 2), « Go Easy » de Dua Lipa et « Crazy for You » de Lana Del Rey (BO du jeu).
+- Repères fin novembre 2026 : « Suzuki » de Fuerza Regida (BO de GTA 6, plus de 3,5 millions de vidéos TikTok), « Love Is a Long Road » de Tom Petty (trailer 1), « Hot Together » des Pointer Sisters (trailer 2), « Go Easy » de Dua Lipa et « Crazy for You » de Lana Del Rey (BO du jeu).
 
 ## Mèmes (post réaction)
 
