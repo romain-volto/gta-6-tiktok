@@ -38,7 +38,7 @@ Document complet pour Romain (plan, chiffres, routine) : https://claude.ai/artif
 **Jours de vidéo (lundi, mercredi, vendredi, dimanche)**
 - On prépare quand même un carrousel de 18 h en brouillon (format 2, 3, 4 ou 6, pas le même que la veille). Si historique.md contient un carrousel au statut « en réserve », on le reprend au lieu d'en créer un nouveau (nouvelle date avec updateScheduledPost).
 - Romain répond « oui » : le carrousel part à 18 h. Il répond « oui, vidéo » : il poste sa vidéo lui-même à 18 h, le carrousel reste en brouillon et passe au statut « en réserve » dans historique.md, pour le prochain 18 h en carrousel.
-- Le message du matin redonne pour la vidéo : titre, description et hashtags prêts à copier (règles de « Référencement »), son conseillé et commentaire à épingler.
+- Le message du matin redonne pour la vidéo : titre, description et hashtags prêts à copier (règles de « Référencement »), son conseillé et commentaire à épingler. Les carrousels et mèmes, eux, partent tout seuls (publication automatique).
 
 **Clip à filmer** (la veille d'un jour de vidéo : dimanche, mardi, jeudi, samedi)
 - Le message du matin donne le clip à filmer pour le lendemain 18 h. Sujet : en priorité la version vidéo d'un post qui a marché, ou la première idée non barrée de « Clips à filmer » dans historique.md, ou l'astuce du jour.
@@ -89,7 +89,7 @@ Rendu : `python3 outils/hud.py posts/<dossier>/spec.json`, puis vérifier `/tmp/
 - **Maximum 3 posts par jour au total**, séries comprises. Avant de créer les posts du jour, compter dans historique.md les posts déjà programmés ce jour-là (ex. une partie de série à 15 h) et ne créer que ce qui reste pour arriver à 3. Avec une série à 15 h : seulement 10 h et 18 h. Au-delà de 3 par jour, l'engagement par post baisse.
 - Images : liens publics `https://raw.githubusercontent.com/romain-volto/gta-6-tiktok/<sha du commit>/posts/<dossier>/slide-XX.jpg` (l'identifiant du commit plutôt que `medias`, pour éviter une ancienne version en cache).
 - Titre et description : suivre **obligatoirement** la section « Référencement » ci-dessous.
-- `autoAddMusic` : false et `autoPublish` : false (publication manuelle, voir « Musique »). Confidentialité : publique.
+- **Publication automatique** : `autoPublish` : true et `autoAddMusic` : true (la musique est ajoutée par TikTok). Redemandée par Romain le 27/11 : en publication manuelle, le post de 15 h n'est pas parti. Confidentialité : publique.
 - **Toujours créer les posts en brouillon (`draft: true`)**. Romain valide chaque post (dans Metricool ou en répondant « oui »). Ne jamais publier sans son accord.
 
 ## Référencement (titres, descriptions, slides)
@@ -166,13 +166,13 @@ Chaque format fait monter un chiffre différent. Mesures relevées sur TikTok ap
 - Vérification obligatoire avant publication : `python3 outils/grille.py posts/<dossier>` puis ouvrir /tmp/grille.jpg avec Read. Si le titre ne se lit pas, si la miniature se confond avec ses voisines ou si quelque chose d'important est coupé, corriger et relancer.
 
 ## Musique
-- Publication manuelle (choix de Romain, 27/11) : les posts sont programmés dans Metricool avec `autoPublish: false` et `autoAddMusic: false`. À l'heure prévue, Romain reçoit une notification de l'appli Metricool : les images sont enregistrées dans sa galerie, le texte est copié, et il termine le post dans TikTok en choisissant lui-même la musique (toute la bibliothèque TikTok est disponible).
-- Chaque matin, on propose pour chaque post un son tendance qui colle à GTA 6 et à l'ambiance du post.
-  - Mème : le son drôle ou le son de trend du moment.
+- Carrousels et mèmes : publication automatique par Metricool (`autoPublish: true`), musique ajoutée par TikTok (`autoAddMusic: true`). La publication manuelle (notification Metricool, son choisi par Romain) a été essayée le 27/11 puis abandonnée à sa demande : le post de 15 h n'est pas parti.
+- Vidéos de Romain (qu'il publie lui-même) : chaque matin, on propose un son tendance qui colle à GTA 6 et à l'ambiance de la vidéo.
+  - Clip drôle : le son drôle ou le son de trend du moment.
   - Astuce argent, braquage : rap ou trap qui monte.
-  - Comparaison Vice City, nostalgie : son années 80 ou musique des trailers.
+  - Vice City, nostalgie : son années 80 ou musique des trailers.
 - Repères fin novembre 2026 : « Suzuki » de Fuerza Regida (BO de GTA 6, plus de 3,5 millions de vidéos TikTok), « Run Away With Me » de Carly Rae Jepsen (dans le jeu, écoutes en forte hausse depuis la sortie), « But I Think It's A Dream » de Captain & Tennille (bande-annonce longue, écoutes en forte hausse), « Love Is a Long Road » de Tom Petty (trailer 1), « Hot Together » des Pointer Sisters (trailer 2), « Go Easy » de Dua Lipa et « Crazy for You » de Lana Del Rey (BO du jeu).
-- Comment choisir dans TikTok : prendre le son dans la bibliothèque TikTok (pas un son importé), vérifier sur la page du son qu'il est utilisé par beaucoup de vidéos récentes, et qu'il colle à l'ambiance de la slide 1 (drôle, tension, nostalgie).
+- Comment choisir dans TikTok : prendre le son dans la bibliothèque TikTok (pas un son importé), vérifier sur la page du son qu'il est utilisé par beaucoup de vidéos récentes, et qu'il colle à l'ambiance de la première seconde (drôle, tension, nostalgie).
 - Vidéos de gameplay de Romain (sur sa Xbox, 4 par semaine, voir « Clip à filmer ») : couper la radio du jeu avant d'enregistrer. Les chansons sous licence des radios peuvent faire couper le son de la vidéo ; on ajoute la musique dans TikTok, son bas pour qu'on entende le jeu.
 
 ## Mèmes (post réaction)
