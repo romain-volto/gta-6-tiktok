@@ -21,7 +21,8 @@ Types de slides (champ "type") :
 - "photo" : photo du jeu. Champs : tag, title, image, caption (facultatif), next (facultatif).
 - "versus": deux photos. Champs : tag, title, photos [{src, label}, {src, label}], caption (facultatif).
 - "rows"  : liste. Champs : tag, title, rows [{k, v}] (ex. code et effet), next (facultatif).
-- "cta"   : fin. Champs : title (question qui divise), comment, share.
+- "cta"   : fin. Champs : title (question qui divise), comment, share, rdv (facultatif : le rendez-vous de la suite,
+            ex. « Partie 2 demain à 18 h », affiché sous « Abonne-toi » ; c'est la raison de s'abonner).
 - "meme"  : mème 100 % maison (sans capture). Champs : setup (bulle blanche en haut, ex. « POV : … »), variant :
             "echec" (gros MISSION ÉCHOUÉE + reason), "notifs" (notifs [{app, text}] façon téléphone),
             "stars" (étoiles de recherche : stars 1-5, label, reason), "wheel" (wheel comme dans hook),
@@ -291,7 +292,12 @@ def body(s, base, n, total):
                 '<svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22 11 13 2 9z"/></svg>'
                 f'<div style="font:900 42px/1.25 Inter">{s.get("share", "Envoie-le à ton pote qui joue à GTA 6")}</div></div>'
                 '<div style="display:flex;gap:24px;margin-top:26px"><div class="glass" style="flex:1;text-align:center;padding:26px;font:900 38px Inter">Enregistre</div>'
-                '<div class="glass" style="flex:1;text-align:center;padding:26px;font:900 38px Inter">Abonne-toi</div></div></div></div>')
+                '<div class="glass" style="flex:1;text-align:center;padding:26px;font:900 38px Inter">Abonne-toi</div></div>')
+        if s.get("rdv"):
+            # Rendez-vous de la suite : donne une raison précise de s'abonner (« Partie 2 demain à 18 h »)
+            out += (f'<div class="glass" style="display:flex;gap:22px;align-items:center;justify-content:center;margin-top:26px;padding:24px 30px;border-color:{A}">'
+                    f'{icon("pin", 52)}<div style="font:900 38px/1.25 Inter;color:{A}">{s["rdv"]}</div></div>')
+        out += '</div></div>'
     elif t == "meme":
         out += f'<div class="content fitbox" style="top:250px;text-align:center"><span class="bub">{s.get("setup", "")}</span></div>'
         v = s.get("variant", "echec")
@@ -360,8 +366,9 @@ FIT_JS = """() => {
 
 
 def nbsp(t):
-    """Typographie française : pas de retour à la ligne dans « 205 000 $ » ni avant « ? ! : $ % »."""
+    """Typographie française : pas de retour à la ligne dans « 205 000 $ », « 18 h », « 5 min » ni avant « ? ! : $ % »."""
     t = re.sub(r"(\d) (?=\d{3}\b)", "\\1&nbsp;", t)
+    t = re.sub(r"(\d) (?=(?:h|min|s)\b)", "\\1&nbsp;", t)
     t = re.sub(r" (?=[?!:;$%€»])", "&nbsp;", t)
     return re.sub(r"(«) ", "\\1&nbsp;", t)
 

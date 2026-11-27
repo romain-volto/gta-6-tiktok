@@ -14,6 +14,53 @@ Créateur : Romain. Public : 76 % d'hommes, francophones, joueurs de GTA 6 (sort
 - Jamais de personnage, logo ou pochette protégés dessinés ou copiés. Pas de photo de personne réelle.
 - Chaque info de jeu doit être vérifiée dans au moins deux sources récentes. Si une info vient seulement de joueurs, l'écrire (« selon les joueurs »).
 
+## Stratégie (27/11) : devenir le compte GTA 6 de référence en France
+
+Document complet pour Romain (plan, chiffres, routine) : https://claude.ai/artifact/6jyPMDFwSJeUyH4trJ8mBk
+
+- **Constat** (semaine du 19 au 25/11) : 45 300 vues, mais 168 visites du profil (0,4 % des vues) et 27 abonnés (16 % des visiteurs). TikTok montre déjà les posts : la priorité est de transformer les vues en abonnés.
+- **Objectifs** : 1 % des vues vers le profil, 25 % des visiteurs abonnés, 100 abonnés par semaine, 10 % des vues par la recherche (4,5 % au départ).
+- **Paliers** : 1 000 abonnés (lives), 10 000 abonnés (récompenses créateurs, seulement pour les vidéos de plus d'1 minute, et playlists), puis dépasser le compte gta6alerte (102 300 abonnés le 27/11).
+- **Les vidéos** font environ 5 fois plus de vues que les carrousels (étude Metricool 2026) ; les deux meilleures vidéos du compte ont fait 6 140 et 4 763 vues. D'où 4 vidéos de Romain par semaine à 18 h.
+
+**Semaine type** (heure de Paris). Une idée prioritaire datée de historique.md ou une grosse actu (annonce de Rockstar, mise à jour du jeu, à poster dans les 24 h) passe avant.
+
+| Jour | 10 h | 12 h | 18 h |
+|---|---|---|---|
+| Lundi | astuce | mème | vidéo de Romain |
+| Mardi | astuce | mème | « Ce que tu ne savais pas » (format 3) |
+| Mercredi | astuce | mème | vidéo de Romain |
+| Jeudi | astuce | mème | personnage qui fait débat (format 4) |
+| Vendredi | astuce | mème | vidéo de Romain |
+| Samedi | astuce | mème | découverte inattendue (format 2), ou Vice City contre Miami (format 6) si les photos sont là |
+| Dimanche | récap : fiche mémo des meilleures astuces de la semaine | mème | vidéo de Romain |
+
+**Jours de vidéo (lundi, mercredi, vendredi, dimanche)**
+- On prépare quand même un carrousel de 18 h en brouillon (format 2, 3, 4 ou 6, pas le même que la veille). Si historique.md contient un carrousel au statut « en réserve », on le reprend au lieu d'en créer un nouveau (nouvelle date avec updateScheduledPost).
+- Romain répond « oui » : le carrousel part à 18 h. Il répond « oui, vidéo » : il poste sa vidéo lui-même à 18 h, le carrousel reste en brouillon et passe au statut « en réserve » dans historique.md, pour le prochain 18 h en carrousel.
+- Le message du matin redonne pour la vidéo : titre, description et hashtags prêts à copier (règles de « Référencement »), son conseillé et commentaire à épingler.
+
+**Clip à filmer** (la veille d'un jour de vidéo : dimanche, mardi, jeudi, samedi)
+- Le message du matin donne le clip à filmer pour le lendemain 18 h. Sujet : en priorité la version vidéo d'un post qui a marché, ou la première idée non barrée de « Clips à filmer » dans historique.md, ou l'astuce du jour.
+- Le brief : ce qu'il faut montrer, plan par plan, en 15 à 30 secondes ; le texte à écrire à l'écran dès la 1re seconde (le mot-clé, comme une slide 1) ; la chute ou la récompense à la fin.
+- Capture : radio du jeu coupée, appui long sur le bouton Partager de la manette Xbox pour garder les dernières secondes de jeu, puis l'appli Xbox sur le téléphone pour récupérer le clip, montage rapide dans CapCut.
+- Jamais de sujet non vérifié : mêmes règles que les carrousels (deux sources, « selon les joueurs »).
+
+**Transformer les vues en abonnés**
+- Chaque carrousel finit par le champ `rdv` de la slide `cta` : le rendez-vous de la suite quand il y en a une (« Partie 2 demain à 18 h »), sinon « Une astuce GTA 6 chaque jour à 10 h ».
+- Pour chaque post (vidéo comprise), le message du matin propose un commentaire à épingler : le rendez-vous de la suite, ou une question qui lance le débat. Romain le poste et l'épingle.
+- Séries numérotées avec le badge « Partie N » sur la miniature (déjà dans « Miniature »).
+
+**Bilan du dimanche** (dans le message du matin du dimanche)
+- Metricool (getAnalyticsDataByMetrics, marque 8328564, 7 derniers jours) : vues (TKEV12), visites du profil (TKEV09), abonnés (TKEV07) et abonnés gagnés (TKEV08). Pour les posts : getAnalyticsAvailableMetrics (network tiktok, connector posts) puis vues, enregistrements et partages de chaque post de la semaine.
+- Message : les 4 chiffres face aux objectifs, les 3 meilleurs posts et pourquoi, le moins bon, et ce qu'on change. La part des vues venues de la recherche n'est pas dans Metricool : demander à Romain une capture des sources de trafic de TikTok Studio.
+- Ajouter une ligne dans « Bilans du dimanche » de historique.md, et rappeler en une ligne les tâches non barrées de « À faire par Romain ».
+- Ce qu'on ajuste :
+  - Un post fait plus du double de la moyenne de la semaine : une suite (partie 2) dans les 48 h, ajoutée en idée prioritaire datée.
+  - Un format reste sous la moitié de la moyenne deux semaines de suite : on le remplace dans la semaine type par un autre format de la liste.
+  - Une vidéo marche : le même angle sur un autre lieu ou un autre personnage, ajouté à « Clips à filmer ».
+  - Un son revient dans les vidéos GTA qui marchent : il passe en tête des sons conseillés (section « Musique »).
+
 ## Structure d'un carrousel (5 à 8 slides)
 
 1. **Accroche** (`hook`) : un secret ou un gain chiffré, en haut le contexte (`label`, `sub`) et si utile le compteur (`hud`), un titre qui pose une question, puis UN visuel : la roue (`wheel`) quand le post oppose deux choix, un gros chiffre (`bignum`), une photo du jeu (`image`) ou une icône. Finir par une pastille (`pill`) qui donne envie de swiper.
@@ -31,7 +78,7 @@ Exemple complet : `outils/exemple-hud/spec.json`. La liste détaillée des champ
 - `rows` : tag, step, title, rows [{k, v}] (ex. code et effet, rang et voiture), next.
 - `photo` : tag, title, image, caption, next.
 - `versus` : tag, title, photos [{src, label}, {src, label}], caption (comparaisons GTA / vraie vie, 2002 / 2026).
-- `cta` : title, comment, share.
+- `cta` : title, comment, share, rdv (le rendez-vous de la suite, voir « Stratégie »).
 - Icônes : moon, heli, fox, cash, smg, star, pin, car, key, eye, trophy, flame, lock, map, phone.
 
 Rendu : `python3 outils/hud.py posts/<dossier>/spec.json`, puis vérifier `/tmp/<dossier>-planche.jpg`. L'ancien style néon (`neon.py`) n'est plus utilisé pour les nouveaux posts.
@@ -40,9 +87,9 @@ Rendu : `python3 outils/hud.py posts/<dossier>/spec.json`, puis vérifier `/tmp/
 
 - Heures : **10 h, 12 h et 18 h** (heure de Paris).
 - **Maximum 3 posts par jour au total**, séries comprises. Avant de créer les posts du jour, compter dans historique.md les posts déjà programmés ce jour-là (ex. une partie de série à 15 h) et ne créer que ce qui reste pour arriver à 3. Avec une série à 15 h : seulement 10 h et 18 h. Au-delà de 3 par jour, l'engagement par post baisse.
-- Images : liens publics `https://raw.githubusercontent.com/romain-volto/gta-6-tiktok/medias/posts/<dossier>/slide-XX.jpg`.
+- Images : liens publics `https://raw.githubusercontent.com/romain-volto/gta-6-tiktok/<sha du commit>/posts/<dossier>/slide-XX.jpg` (l'identifiant du commit plutôt que `medias`, pour éviter une ancienne version en cache).
 - Titre et description : suivre **obligatoirement** la section « Référencement » ci-dessous.
-- `autoAddMusic` : true. Confidentialité : publique.
+- `autoAddMusic` : false et `autoPublish` : false (publication manuelle, voir « Musique »). Confidentialité : publique.
 - **Toujours créer les posts en brouillon (`draft: true`)**. Romain valide chaque post (dans Metricool ou en répondant « oui »). Ne jamais publier sans son accord.
 
 ## Référencement (titres, descriptions, slides)
@@ -83,6 +130,7 @@ Ce qui compte pour TikTok en 2026, dans l'ordre : temps passé et taux de compl�
 **Slide finale**
 - `share` : une phrase qui pousse à envoyer le post à quelqu'un de précis (« Envoie-le à ton pote qui est encore à Key Lento »). C'est le signal le plus fort.
 - `comment` : une question facile ou qui divise (« Jason ou Lucia ? », « Tu l'avais trouvé ? Réponds oui ou non »), car les posts photo reçoivent beaucoup de commentaires.
+- `rdv` : toujours rempli, c'est la raison de s'abonner (« Partie 2 demain à 18 h », sinon « Une astuce GTA 6 chaque jour à 10 h »).
 
 **Description**
 - La première ligne est visible avant « plus » : elle doit accrocher ET contenir le mot-clé dans les 50 premiers caractères.
@@ -106,10 +154,10 @@ Chaque format fait monter un chiffre différent. Mesures relevées sur TikTok ap
 5. Situation drôle (partages) : c'est le mème du jour.
 6. Vice City contre le vrai Miami (commentaires) : « Devine lequel est le vrai ». Il faut des photos du vrai Miami envoyées par Romain dans banque/ ; sans elles, ne pas faire ce format.
 7. Fiche mémo (à tester sur les guides) : toutes les infos utiles lisibles sur la slide 1 (titre, récompense en gros, 3 ou 4 étapes numérotées, une alerte), puis 1 ou 2 slides de détail ou de photos. Rendu : slide hook avec le champ `memo` de hud.py (points + warn). C'est la forme du post « Retourne chez Jason +5 000 $ », le meilleur du compte (14 060 vues, 62 % des gens vont à la slide 2, 6,2 % des vues par la recherche). Titre et récompense doivent rester lisibles sur la grille du profil ; les étapes peuvent être plus petites. Comparer au bilan avec les guides classiques.
-- Rotation : 10 h = guide (ou une idée prioritaire de historique.md), 12 h = mème, 18 h = un des formats 2, 3, 4 ou 6, jamais le même deux jours de suite.
+- Rotation : suivre la « Semaine type » de la section « Stratégie » (10 h = guide ou idée prioritaire, le dimanche le récap en fiche mémo ; 12 h = mème ; 18 h = vidéo de Romain le lundi, mercredi, vendredi et dimanche, sinon format 3 le mardi, 4 le jeudi, 2 ou 6 le samedi). Le carrousel de secours des jours de vidéo n'est jamais le même format que la veille.
 - Photos d'un carrousel : uniquement les captures de banque/ qui correspondent au sujet (les regarder avec Read pour les reconnaître). S'il n'y en a pas, faire une version sans photo (hook icon ou bignum, steps, rows) ou choisir un autre format, et demander à Romain dans le message du matin les captures précises qui manquent pour les prochains sujets.
 - Fins du jeu : pas de gros spoiler sur la miniature ni dans le titre (Rockstar fait retirer les spoilers). Si le post parle de la fin, slide 1 « Spoilers » et rien de révélé avant la slide 2.
-- Dates à ne pas rater : 10/12 (GTA 6 a 8 nominations aux Game Awards) et le lendemain matin pour les résultats.
+- Dates à ne pas rater : 10/12 (GTA 6 a 8 nominations aux Game Awards, dont jeu de l'année ; cérémonie dans la nuit en France) et le 11/12 à 10 h pour les résultats ; 19/12, un mois de jeu (« 1 mois de GTA 6 : ce que tout le monde a raté »). Toute annonce de Rockstar ou mise à jour du jeu : un post dans les 24 h, à la place du format prévu.
 
 ## Miniature (slide 1)
 - La slide 1 est la miniature (photoCoverIndex 0). Sur le profil, TikTok la recadre au centre en 3:4 : environ 240 px coupés en haut et en bas. Tout ce qui compte (titre, chiffre, partie, visage ou voiture) doit être entre 300 et 1600 px de haut. Le petit label tout en haut n'apparaît pas sur la grille.
@@ -125,7 +173,7 @@ Chaque format fait monter un chiffre différent. Mesures relevées sur TikTok ap
   - Comparaison Vice City, nostalgie : son années 80 ou musique des trailers.
 - Repères fin novembre 2026 : « Suzuki » de Fuerza Regida (BO de GTA 6, plus de 3,5 millions de vidéos TikTok), « Run Away With Me » de Carly Rae Jepsen (dans le jeu, écoutes en forte hausse depuis la sortie), « But I Think It's A Dream » de Captain & Tennille (bande-annonce longue, écoutes en forte hausse), « Love Is a Long Road » de Tom Petty (trailer 1), « Hot Together » des Pointer Sisters (trailer 2), « Go Easy » de Dua Lipa et « Crazy for You » de Lana Del Rey (BO du jeu).
 - Comment choisir dans TikTok : prendre le son dans la bibliothèque TikTok (pas un son importé), vérifier sur la page du son qu'il est utilisé par beaucoup de vidéos récentes, et qu'il colle à l'ambiance de la slide 1 (drôle, tension, nostalgie).
-- Vidéos de gameplay (quand Romain filmera sa Xbox) : couper la radio du jeu avant d'enregistrer. Les chansons sous licence des radios peuvent faire couper le son de la vidéo ; on ajoute la musique dans TikTok.
+- Vidéos de gameplay de Romain (sur sa Xbox, 4 par semaine, voir « Clip à filmer ») : couper la radio du jeu avant d'enregistrer. Les chansons sous licence des radios peuvent faire couper le son de la vidéo ; on ajoute la musique dans TikTok, son bas pour qu'on entende le jeu.
 
 ## Mèmes (post réaction)
 

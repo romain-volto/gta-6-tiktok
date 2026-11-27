@@ -51,6 +51,7 @@ Une idée par créneau. Mot-clé exact dans le titre et le début de la descript
 - Ce que tu ne savais pas sur GTA 6 (liste de détails cachés)
 - Vice City contre le vrai Miami : devine lequel est le vrai (seulement quand Romain aura mis des photos du vrai Miami dans la banque)
 - 10/12 à 18 h : GTA 6 nommé 8 fois aux Game Awards, va-t-il tout rafler ? Le 11/12 à 10 h : les résultats.
+- 19/12 à 18 h : 1 mois de GTA 6 : ce que tout le monde a raté (liste, format 3).
 
 ### Astuce de 10 h (guides)
 Les recherches qui amènent des gens sur le compte tombent sur des posts déjà faits (maison de Jason, codes de triche, 50 000 $) : on ne les refait pas, on fait des suites ou de nouveaux guides sur les mêmes thèmes.
@@ -61,5 +62,18 @@ Les recherches qui amènent des gens sur le compte tombent sur des posts déjà 
 - ~~Codes de triche GTA 6~~ : déjà fait le 24/11. Partie 2 seulement avec de nouveaux codes vérifiés dans deux sources.
 - ~~Comment avoir 50 000 $~~ : déjà fait le 25/11 (glitch argent infini). Remplacé par les coffres des banques.
 
-### À faire par Romain (vidéo)
-- « Valras-Plage en trailer GTA VI » : modèle CapCut « GTA VI TREND EDIT » (9 photos), avec ses propres photos.
+### Clips à filmer (vidéos de Romain à 18 h, voir « Stratégie » dans STYLE.md)
+Un clip par brief, 15 à 30 secondes, mot-clé écrit à l'écran dès la 1re seconde. Barrer une fois posté.
+- Retourne chez Jason à Key Lento : l'enveloppe « Rainy Day Fund » (+5 000 $) et le serpent Delores. Version vidéo du record du compte (14 060 vues).
+- Braquage, partie 2 : un autre braquage en approche discrète, même accroche que la meilleure vidéo du compte (arme silencieuse, 6 140 vues).
+- Pfister Growler rose gratuite : sortir la voiture de Vanessa du garage de La Perle (carrousel du 27/11).
+- Coffres des grandes banques : l'ouverture d'un coffre et le compteur d'argent qui monte (après le carrousel du 28/11).
+
+### À faire par Romain
+- Profil (une fois, 10 min) : nom « GTA 6 Astuces & Secrets FR » ; bio « Astuces, secrets et mèmes GTA 6 en français. 3 posts par jour, abonne-toi. » ; photo profil/photo-profil.jpg ; épingler « Retourne chez Jason », la vidéo « Braquage arme silencieuse » et la partie 1 de la série en cours.
+- « Valras-Plage en trailer GTA VI » (vidéo) : modèle CapCut « GTA VI TREND EDIT » (9 photos), avec ses propres photos.
+
+## Bilans du dimanche
+| Semaine | Vues | Visites du profil | Abonnés gagnés | Vues par la recherche | Note |
+|---|---|---|---|---|---|
+| 19 au 25/11 | 45 300 | 168 (0,4 % des vues) | 27 (16 % des visiteurs) | 4,5 % | point de départ ; objectifs : 1 %, 25 %, 100 par semaine, 10 % |
