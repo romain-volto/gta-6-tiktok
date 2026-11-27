@@ -12,7 +12,9 @@ Types de slides (champ "type") :
 - "hook"  : accroche. Champs : label, sub (petit texte en haut à gauche), hud {plus, amount, stars} (facultatif, en haut à droite),
             chip, title, title_size, puis UN visuel au choix : wheel {left:{icon,l1,l2}, right:{icon,l1,l2}, center:[l1,l2], hint}
             | bignum {num, text} | image "img/x.jpg" (+ image_top, image_height, image_fit "cover" ou "contain",
-            badge = pastille bien visible sur la miniature, ex. « Partie 2 ») | icon "nom".
+            badge = pastille bien visible sur la miniature, ex. « Partie 2 ») | icon "nom"
+            | memo {points [texte, 3 à 5], warn {title, text}} (fiche mémo : les étapes numérotées lisibles
+            sur la miniature, placées juste sous le titre ; titre court conseillé, title_size 120 à 150).
             Puis pill (pastille en bas, ex. « L'ASTUCE EN 3 ÉTAPES → »).
 - "steps" : étape. Champs : tag (ex. MISSION), step (ex. ÉTAPE 1/3), title, points [{icon, text}] (3 max conseillé,
             le dernier est mis en avant), warn {title, text} (facultatif), next (pastille du bas, facultatif).
@@ -27,7 +29,7 @@ Types de slides (champ "type") :
             dessous, ex. « Lucia va apprécier. »).
 Icônes : moon, heli, fox, cash, smg, star, pin, car, key, eye, trophy, flame, lock, map, phone.
 """
-import json, math, pathlib, sys
+import json, math, pathlib, re, sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 FONTS = (HERE / "fonts").as_uri()
@@ -203,9 +205,22 @@ def body(s, base, n, total):
     out = f'<img class="bg" src="{BG}"><div class="shade"></div><div class="leak"></div><div class="vig"></div>'
     if t == "hook":
         out += hud_top(s)
-        out += (f'<div class="content fitbox" style="top:330px;text-align:center">'
+        memo_html = ""
+        if s.get("memo"):
+            # Fiche mémo : toutes les infos utiles sur la miniature (étapes numérotées + alerte), sous le titre
+            m = s["memo"]
+            memo_html = '<div class="glass" style="margin-top:44px;padding:10px 34px 14px;text-align:left">'
+            for k, p in enumerate(m.get("points", [])[:5]):
+                sep = "border-top:2px solid rgba(255,230,200,.14);" if k else ""
+                memo_html += (f'<div style="display:flex;gap:24px;align-items:center;padding:18px 0;{sep}">'
+                              f'<div class="gbg" style="flex:0 0 60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;'
+                              f'font:900 34px Inter;color:#fff;box-shadow:0 0 24px {GLOW}">{k + 1}</div>'
+                              f'<div style="font:800 40px/1.25 Inter">{p}</div></div>')
+            memo_html += "</div>" + warn_box(m.get("warn"))
+        out += (f'<div class="content fitbox" style="top:{s.get("title_top", 300 if memo_html else 330)}px;text-align:center">'
                 + (f'<div class="chip"><span class="dot"></span>{s["chip"]}</div>' if s.get("chip") else "")
-                + f'<div class="big fit" style="font-size:{s.get("title_size", 168)}px;margin-top:30px">{s.get("title", "")}</div></div>')
+                + f'<div class="big fit" style="font-size:{s.get("title_size", 168)}px;margin-top:30px">{s.get("title", "")}</div>'
+                + memo_html + "</div>")
         if s.get("wheel"):
             out += f'<div class="abs" style="top:690px;left:160px">{wheel(s["wheel"])}</div>' + pill(s.get("pill"), 1430)
         elif s.get("image"):
@@ -217,6 +232,8 @@ def body(s, base, n, total):
                         f'font:900 italic 74px/1 Barlow;text-transform:uppercase;padding:14px 30px 10px;border-radius:20px;'
                         f'box-shadow:0 10px 0 #3A0408,0 0 40px {GLOW}">{s["badge"]}</div>')
             out += pill(s.get("pill"), 1410) if top + h <= 1390 else ""
+        elif s.get("memo"):
+            pass
         elif s.get("bignum"):
             bn = s["bignum"]
             out += (f'<div class="content" style="top:800px;display:flex;align-items:center;justify-content:center;gap:34px">'
@@ -267,14 +284,14 @@ def body(s, base, n, total):
         out += "</div>" + pill(s.get("next"), 1430)
     elif t == "cta":
         out += (f'<div class="content" style="top:300px;text-align:center"><div class="chip"><span class="dot"></span>À GARDER</div>'
-                f'<div class="big fit" style="font-size:{s.get("title_size", 150)}px;margin-top:34px">{s.get("title", "")}</div></div>'
-                '<div class="content" style="top:760px">'
+                f'<div class="big fit" style="font-size:{s.get("title_size", 150)}px;margin-top:34px">{s.get("title", "")}</div>'
+                '<div style="margin-top:60px;text-align:left">'
                 f'<div class="glass" style="display:flex;gap:24px;align-items:center;padding:30px 34px">{icon("phone", 64)}<div style="font:800 40px/1.3 Inter">{s.get("comment", "Dis-moi en commentaire ce que tu en penses.")}</div></div>'
                 f'<div class="gbg" style="display:flex;gap:24px;align-items:center;padding:30px 34px;border-radius:30px;margin-top:26px;box-shadow:0 0 50px {GLOW}">'
                 '<svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22 11 13 2 9z"/></svg>'
                 f'<div style="font:900 42px/1.25 Inter">{s.get("share", "Envoie-le à ton pote qui joue à GTA 6")}</div></div>'
                 '<div style="display:flex;gap:24px;margin-top:26px"><div class="glass" style="flex:1;text-align:center;padding:26px;font:900 38px Inter">Enregistre</div>'
-                '<div class="glass" style="flex:1;text-align:center;padding:26px;font:900 38px Inter">Abonne-toi</div></div></div>')
+                '<div class="glass" style="flex:1;text-align:center;padding:26px;font:900 38px Inter">Abonne-toi</div></div></div></div>')
     elif t == "meme":
         out += f'<div class="content fitbox" style="top:250px;text-align:center"><span class="bub">{s.get("setup", "")}</span></div>'
         v = s.get("variant", "echec")
@@ -342,9 +359,16 @@ FIT_JS = """() => {
 }""" % SAFE_BOTTOM
 
 
+def nbsp(t):
+    """Typographie française : pas de retour à la ligne dans « 205 000 $ » ni avant « ? ! : $ % »."""
+    t = re.sub(r"(\d) (?=\d{3}\b)", "\\1&nbsp;", t)
+    t = re.sub(r" (?=[?!:;$%€»])", "&nbsp;", t)
+    return re.sub(r"(«) ", "\\1&nbsp;", t)
+
+
 def grad_tags(v):
     if isinstance(v, str):
-        return v.replace("<g>", '<span class="grad">').replace("</g>", "</span>")
+        return nbsp(v).replace("<g>", '<span class="grad">').replace("</g>", "</span>")
     if isinstance(v, list):
         return [grad_tags(x) for x in v]
     if isinstance(v, dict):

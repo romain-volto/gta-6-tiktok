@@ -52,11 +52,14 @@ Une idée par créneau. Mot-clé exact dans le titre et le début de la descript
 - Vice City contre le vrai Miami : devine lequel est le vrai (seulement quand Romain aura mis des photos du vrai Miami dans la banque)
 - 10/12 à 18 h : GTA 6 nommé 8 fois aux Game Awards, va-t-il tout rafler ? Le 11/12 à 10 h : les résultats.
 
-### Astuce de 10 h (recherches TikTok qui amènent des gens sur le compte)
-- Que se passe-t-il si tu retournes chez Jason (« what happens if you go back to Jason's house »)
-- Voiture gratuite chez Moses
-- Comment avoir 50 000 $ dans GTA 6
-- Codes de triche GTA 6 (seulement s'ils sont vérifiés dans au moins deux sources)
+### Astuce de 10 h (guides)
+Les recherches qui amènent des gens sur le compte tombent sur des posts déjà faits (maison de Jason, codes de triche, 50 000 $) : on ne les refait pas, on fait des suites ou de nouveaux guides sur les mêmes thèmes.
+- 28/11 : Les coffres des grandes banques, jusqu'à 205 000 $ en 5 minutes (débloqués fin du chapitre 4 avec la quête « That's Where The Money Is… »). À faire au format fiche mémo (voir « Formats qui marchent », à tester).
+- Voiture gratuite chez Moses (vérifier ce que les joueurs cherchent exactement)
+- Avoir la meilleure fin de GTA 6 : les choix et les conditions, « Spoilers » en slide 1, rien de révélé sur la miniature ni dans le titre
+- ~~Que se passe-t-il si tu retournes chez Jason~~ : déjà fait avant l'automatisation (14 060 vues, 6,2 % par la recherche). Partie 2 seulement avec du nouveau vérifié.
+- ~~Codes de triche GTA 6~~ : déjà fait le 24/11. Partie 2 seulement avec de nouveaux codes vérifiés dans deux sources.
+- ~~Comment avoir 50 000 $~~ : déjà fait le 25/11 (glitch argent infini). Remplacé par les coffres des banques.
 
 ### À faire par Romain (vidéo)
 - « Valras-Plage en trailer GTA VI » : modèle CapCut « GTA VI TREND EDIT » (9 photos), avec ses propres photos.
