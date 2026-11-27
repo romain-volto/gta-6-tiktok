@@ -41,3 +41,10 @@ Ajouter une ligne à chaque post créé : date, heure, dossier, sujet, statut.
 | 2026-11-26 | 18:00 | posts/2026-11-26-meme-arret-maladie | Mème : « Mon boss qui pense que je suis au lit avec 40 de fièvre » / « (GTA 6 est sorti il y a une semaine) » (image IMG_4634 de la banque) | programmé (validé par Romain), remplace Ocean Beach ce soir, id Metricool 443212696 |
 | 2026-11-27 | 15:00 | posts/2026-11-27-growler-rose-gratuite | Voiture gratuite : Pfister Growler rose de Vanessa, garage de La Perle (mot de passe MuffinsQueen15, code 92665, chapitre 3) | programmé (validé par Romain à 9 h 35), décalé à 15 h pour espacer de 3 h avec 12 h et 18 h, id Metricool 444065985 |
 | 2026-11-27 | 12:00 | posts/2026-11-27-meme-lucia-prison | Mème : « Moi qui laisse Lucia en prison pour vivre ma meilleure vie avec Jason » / « (elle comprendra) » (image IMG_4639, titre anglais de Game Hero traduit ; remplace le mème « Lucia et les conv » refusé par Romain, pas assez drôle) | programmé (validé par Romain à 9 h 40, logo Game Hero retiré : image de Romain), id Metricool 444072808 |
+
+## Idées prioritaires (recherches TikTok qui amènent des gens sur le compte, 27/11)
+À traiter en priorité pour l'astuce de 10 h ou le sujet de 18 h, une par jour, avec le mot-clé exact dans le titre et le début de la description. Barrer l'idée une fois postée.
+- Que se passe-t-il si tu retournes chez Jason (« what happens if you go back to Jason's house »)
+- Voiture gratuite chez Moses
+- Comment avoir 50 000 $ dans GTA 6
+- Codes de triche GTA 6 (seulement s'ils sont vérifiés dans au moins deux sources)
