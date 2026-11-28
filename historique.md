@@ -54,7 +54,7 @@ Une idée par créneau. Mot-clé exact dans le titre et le début de la descript
 - Vice City contre le vrai Miami : devine lequel est le vrai (seulement quand Romain aura mis des photos du vrai Miami dans la banque)
 - 10/12 à 18 h : GTA 6 nommé 8 fois aux Game Awards, va-t-il tout rafler ? Le 11/12 à 10 h : les résultats.
 - 19/12 à 18 h : 1 mois de GTA 6 : ce que tout le monde a raté (liste, format 3).
-- La fin de GTA 6 te déçoit aussi ? (idée de Romain le 28/11, débat en commentaires) : sans aucun spoiler sur la miniature ni dans le titre, « Spoilers » en slide 1 ; ce que les joueurs reprochent, ce qui change selon les choix, question qui divise. Vérifier les avis dans deux sources.
+- Ce qui déçoit dans GTA 6 (idée de Romain le 28/11, liste qui fait débat en commentaires, format 3) : la fin (sans aucun spoiler, rien sur la miniature ni dans le titre), le code argent de 250 000 $ qui bloque la sauvegarde, impossible d'acheter une maison ou un appartement (seulement 8 garages, de 4 000 à 40 000 $), impossible de garder des remorques et des bateaux (constaté par Romain, à vérifier dans deux sources). Question finale : « Et toi, qu'est-ce qui te déçoit le plus ? ».
 - GTA 6 : le code argent de 250 000 $ et son piège (idée de Romain le 28/11) : code ↑ → ↓ ← ↑ ← ↓ → débloqué après l'histoire, mais plus de sauvegarde ni de succès une fois utilisé ; finir par les vraies façons de gagner de l'argent qui restent (coffres des banques, voitures volées). Suite du post codes de triche du 24/11, badge « Partie 2 ».
 - GTA Online pour GTA 6 : quand ? (idée de Romain le 28/11) : pas de date officielle de Rockstar au 28/11 ; à faire seulement s'il y a du nouveau vérifié (annonce, date), sinon c'est une actu à poster dans les 24 h dès qu'elle tombe.
 
