@@ -41,6 +41,9 @@ Ajouter une ligne à chaque post créé : date, heure, dossier, sujet, statut.
 | 2026-11-26 | 18:00 | posts/2026-11-26-meme-arret-maladie | Mème : « Mon boss qui pense que je suis au lit avec 40 de fièvre » / « (GTA 6 est sorti il y a une semaine) » (image IMG_4634 de la banque) | programmé (validé par Romain), remplace Ocean Beach ce soir, id Metricool 443212696 |
 | 2026-11-27 | 15:00 | posts/2026-11-27-growler-rose-gratuite | Voiture gratuite : Pfister Growler rose de Vanessa, garage de La Perle (mot de passe MuffinsQueen15, code 92665, chapitre 3) | programmé (validé par Romain à 9 h 35), décalé à 15 h pour espacer de 3 h avec 12 h et 18 h ; pas parti à 15 h en publication manuelle, recréé à 15 h 25 en publication automatique, publié à 15 h 25 (https://www.tiktok.com/@grand_theft_auto_6vi/video/7712857351644089622), id Metricool 444428771 |
 | 2026-11-27 | 12:00 | posts/2026-11-27-meme-lucia-prison | Mème : « Moi qui laisse Lucia en prison pour vivre ma meilleure vie avec Jason » / « (elle comprendra) » (image IMG_4639, titre anglais de Game Hero traduit ; remplace le mème « Lucia et les conv » refusé par Romain, pas assez drôle) | programmé (validé par Romain à 9 h 40, logo Game Hero retiré : image de Romain), id Metricool 444072808 |
+| 2026-11-28 | 10:00 | posts/2026-11-28-coffres-banques | Braquage : les coffres des banques jusqu'à 205 000 $ (fiche mémo : mission « That's Where The Money Is… » de Yasmani, fourgon blindé au café Orquidea, classement des Lombank selon les joueurs, fuite) | brouillon, id Metricool 445167447 |
+| 2026-11-28 | 12:00 | posts/2026-11-28-meme-profil-criminel | Mème : « Mon profil criminel dans GTA 6 du jour 1 au jour 10 » / « (je m'arrêtais aux feux rouges) » (image IMG_4640, capture Reddit u/Jules-Car3499) ; mèmes de rechange : posts/2026-11-28-meme-muscu-jason (IMG_4638), posts/2026-11-28-meme-repeindre (maison) | brouillon, id Metricool 445167455 |
+| 2026-11-28 | 18:00 | posts/2026-11-28-mandy-tueuse | Mandy tueuse en série ? (format 4, sans photo) : le doigt dans l'évier (Pipework), le coffre de sa voiture, le trou dans le jardin, Dexter, rien de confirmé par Rockstar | brouillon, id Metricool 445167466 |
 
 Publication : automatique depuis le 27/11 à 15 h (autoPublish true, musique ajoutée par TikTok), à la demande de Romain ; tous les posts programmés (Ocean Beach, GTA 6 contre vraie vie, série Karin = Toyota) ont été passés en automatique.
 
@@ -48,7 +51,7 @@ Publication : automatique depuis le 27/11 à 15 h (autoPublish true, musique ajo
 Une idée par créneau. Mot-clé exact dans le titre et le début de la description. Barrer l'idée (~~texte~~) une fois postée.
 
 ### Sujet de 18 h (formats qui marchent, voir STYLE.md)
-- 28/11 : Mandy, tueuse en série ? (personnage qui fait débat). Indices relevés par les joueurs, à vérifier : doigt coupé dans l'évier, hachoir dans sa voiture, clin d'œil possible à Dexter. Slides avec « selon les joueurs ». Question finale : « Tueuse ou pas ? ». Captures de Mandy à demander à Romain (sinon version sans photo).
+- ~~28/11 : Mandy, tueuse en série ? (personnage qui fait débat). Indices relevés par les joueurs, à vérifier : doigt coupé dans l'évier, hachoir dans sa voiture, clin d'œil possible à Dexter. Slides avec « selon les joueurs ». Question finale : « Tueuse ou pas ? ». Captures de Mandy à demander à Romain (sinon version sans photo).~~ : fait le 28/11 à 18 h (sans photo).
 - GTA 6 te laisse faire ça ? (découvertes inattendues)
 - Ce que tu ne savais pas sur GTA 6 (liste de détails cachés)
 - Vice City contre le vrai Miami : devine lequel est le vrai (seulement quand Romain aura mis des photos du vrai Miami dans la banque)
@@ -60,7 +63,7 @@ Une idée par créneau. Mot-clé exact dans le titre et le début de la descript
 
 ### Astuce de 10 h (guides)
 Les recherches qui amènent des gens sur le compte tombent sur des posts déjà faits (maison de Jason, codes de triche, 50 000 $) : on ne les refait pas, on fait des suites ou de nouveaux guides sur les mêmes thèmes.
-- 28/11 : Les coffres des grandes banques, jusqu'à 205 000 $ en 5 minutes (débloqués fin du chapitre 4 avec la quête « That's Where The Money Is… »). À faire au format fiche mémo (voir « Formats qui marchent », à tester).
+- ~~28/11 : Les coffres des grandes banques, jusqu'à 205 000 $ en 5 minutes (débloqués fin du chapitre 4 avec la quête « That's Where The Money Is… »). À faire au format fiche mémo (voir « Formats qui marchent », à tester).~~ : fait le 28/11 à 10 h (« 5 minutes » retiré : une seule source).
 - GTA 6 : comment avoir l'amour passionnel (la relation entre Jason et Lucia au niveau maximum), idée de Romain le 27/11, au format fiche mémo : les 4 niveaux et où voir le sien (appui long à droite sur la croix), ce qui fait monter (sorties à deux, missions en duo, gestes, messages, cadeaux, jouer aussi Lucia), ce qui fait baisser, et « Finir le jeu en Follement amoureux, c'est grave ? » sans aucun spoiler sur la fin. Vérifier dans le jeu ou dans deux sources le nom exact des niveaux en français (Gameblog : « À la vie, à la mort », « Follement amoureux », « Distant », « À bout » ; en anglais : Hot Together, Crazy in Love, Partners in Crime, Running on Empty).
 - Voiture gratuite chez Moses (vérifier ce que les joueurs cherchent exactement)
 - Avoir la meilleure fin de GTA 6 : les choix et les conditions, « Spoilers » en slide 1, rien de révélé sur la miniature ni dans le titre
@@ -70,7 +73,7 @@ Les recherches qui amènent des gens sur le compte tombent sur des posts déjà 
 
 ### Clips à filmer (vidéos de Romain à 18 h, voir « Stratégie » dans STYLE.md)
 Un clip par brief, 15 à 30 secondes, mot-clé écrit à l'écran dès la 1re seconde. Barrer une fois posté.
-- Retourne chez Jason à Key Lento : l'enveloppe « Rainy Day Fund » (+5 000 $) et le serpent Delores. Version vidéo du record du compte (14 060 vues).
+- ~~Retourne chez Jason à Key Lento : l'enveloppe « Rainy Day Fund » (+5 000 $) et le serpent Delores. Version vidéo du record du compte (14 060 vues).~~ : briefé le 28/11 pour la vidéo du 29/11 à 18 h.
 - Braquage, partie 2 : un autre braquage en approche discrète, même accroche que la meilleure vidéo du compte (arme silencieuse, 6 140 vues).
 - Pfister Growler rose gratuite : sortir la voiture de Vanessa du garage de La Perle (carrousel du 27/11).
 - Coffres des grandes banques : l'ouverture d'un coffre et le compteur d'argent qui monte (après le carrousel du 28/11).
