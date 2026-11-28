@@ -1,0 +1,133 @@
+{
+ "sujet": "Mandy, tueuse en série ? La théorie des joueurs (format 4, sans photo). Sources : Dexerto, Beebom, Fextralife, Ladbible",
+ "slides": [
+  {
+   "type": "hook",
+   "label": "GTA VI · Théorie des joueurs",
+   "sub": "Mission Pipework",
+   "hud": {
+    "stars": 3
+   },
+   "chip": "Le personnage qui fait débat",
+   "title": "Mandy<br><g>tueuse en série</g>&nbsp;?",
+   "wheel": {
+    "left": {
+     "icon": "eye",
+     "l1": "Tueuse",
+     "l2": "en série"
+    },
+    "right": {
+     "icon": "lock",
+     "l1": "Juste",
+     "l2": "bizarre"
+    },
+    "center": [
+     "4 INDICES",
+     "À JUGER"
+    ],
+    "hint": "à toi de voter"
+   },
+   "pill": "LES 4 INDICES DES JOUEURS →",
+   "title_size": 118
+  },
+  {
+   "type": "steps",
+   "tag": "Indice",
+   "step": "1/4",
+   "title": "Le <g>doigt</g>",
+   "points": [
+    {
+     "icon": "key",
+     "text": "Mandy loue sa maison à <b>Brian</b>. Mission <b>Pipework</b> : Jason vient réparer son évier."
+    },
+    {
+     "icon": "eye",
+     "text": "Dans les tuyaux, il trouve ce qui ressemble à <b>un doigt humain</b>."
+    }
+   ],
+   "warn": {
+    "title": "Pas de gros spoiler",
+    "text": "Tout se passe au tout début du jeu."
+   },
+   "next": "INDICE 2 : SA VOITURE →"
+  },
+  {
+   "type": "steps",
+   "tag": "Indice",
+   "step": "2/4",
+   "title": "Le <g>coffre</g>",
+   "points": [
+    {
+     "icon": "car",
+     "text": "Dans le coffre de sa voiture, selon les joueurs : <b>un hachoir</b>."
+    },
+    {
+     "icon": "lock",
+     "text": "Avec : <b>du ruban adhésif</b>, du fil et une cisaille."
+    }
+   ],
+   "next": "LE PLUS LOURD EN SLIDE 4 →"
+  },
+  {
+   "type": "steps",
+   "tag": "Indice",
+   "step": "3/4",
+   "title": "Le <g>jardin</g>",
+   "points": [
+    {
+     "icon": "map",
+     "text": "Derrière sa maison, les joueurs ont repéré <b>un trou de la taille d'un corps</b>."
+    },
+    {
+     "icon": "flame",
+     "text": "Les joueurs y voient <b>une tombe</b>."
+    }
+   ],
+   "next": "INDICE 4 : UNE SÉRIE CULTE →"
+  },
+  {
+   "type": "steps",
+   "tag": "Indice",
+   "step": "4/4",
+   "title": "<g>Dexter</g>&nbsp;?",
+   "points": [
+    {
+     "icon": "eye",
+     "text": "Les joueurs la comparent à <b>Dexter</b>, le tueur en série de la série télé."
+    },
+    {
+     "icon": "pin",
+     "text": "Selon les joueurs, <b>un clin d'œil à Dexter</b> serait caché à Vice City."
+    }
+   ],
+   "next": "LE VERDICT →"
+  },
+  {
+   "type": "rows",
+   "tag": "Verdict",
+   "step": "Au 28/11",
+   "title": "<g>Confirmé</g>&nbsp;?",
+   "rows": [
+    {
+     "k": "Rockstar",
+     "v": "<b>Rien de confirmé</b> : c'est une théorie des joueurs."
+    },
+    {
+     "k": "Pour",
+     "v": "Le doigt, le coffre et le jardin, <b>dès le début du jeu</b>."
+    },
+    {
+     "k": "Contre",
+     "v": "Le coffre peut s'expliquer : <b>bricolage et jardinage</b>."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "Tueuse <g>ou pas</g>&nbsp;?",
+   "comment": "Réponds « tueuse » ou « innocente » en commentaire",
+   "share": "Envoie-le à ton pote qui a réparé l'évier de Mandy",
+   "rdv": "Une astuce GTA 6 chaque jour à 10 h"
+  }
+ ]
+}

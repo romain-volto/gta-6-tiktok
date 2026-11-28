@@ -1,0 +1,107 @@
+{
+ "sujet": "Coffres des grandes banques GTA 6 : jusqu'à 205 000 $ (fiche mémo). Sources : PowerPyx (walkthrough + guide argent), Gamitu, gta6heists.com",
+ "slides": [
+  {
+   "type": "hook",
+   "label": "GTA VI · Fin du chapitre 4",
+   "sub": "Mission de Yasmani",
+   "hud": {
+    "plus": "+ $205 000",
+    "amount": "$205 000",
+    "stars": 4
+   },
+   "chip": "Coffres des banques",
+   "title": "Coffre de banque<br><g>205 000 $</g>",
+   "title_size": 132,
+   "memo": {
+    "points": [
+     "Finis la mission « That's Where The Money Is… »",
+     "Attends le <b>fourgon blindé</b> au café Orquidea",
+     "Suis le garde : le coffre s'ouvre pour lui",
+     "Prends les <b>billets marqués</b>, change de voiture"
+    ],
+    "warn": {
+     "title": "Attention",
+     "text": "4 étoiles d'un coup : prépare ta fuite."
+    }
+   }
+  },
+  {
+   "type": "steps",
+   "tag": "Mission",
+   "step": "Étape 1/2",
+   "title": "Le <g>fourgon</g>",
+   "points": [
+    {
+     "icon": "pin",
+     "text": "Va au <b>café Orquidea</b>, à Ocean Beach, et attends à la fenêtre."
+    },
+    {
+     "icon": "car",
+     "text": "Suis le <b>fourgon blindé</b> de loin jusqu'à la banque."
+    },
+    {
+     "icon": "key",
+     "text": "Le coffre s'ouvre quand <b>le garde livre l'argent</b> : entre derrière lui."
+    }
+   ],
+   "warn": {
+    "title": "Pas de fourgon ?",
+    "text": "Yasmani vend un tuyau à 10 000 $, après 2 braquages d'agences de prêt."
+   },
+   "next": "LES COFFRES LES PLUS RICHES EN SLIDE 3 →"
+  },
+  {
+   "type": "rows",
+   "tag": "Classement",
+   "step": "Selon les joueurs",
+   "title": "Les <g>meilleurs</g> coffres",
+   "rows": [
+    {
+     "k": "1",
+     "v": "<b>Lombank</b> Downtown : 135 000 à 205 000 $"
+    },
+    {
+     "k": "2",
+     "v": "<b>Lombank</b> Ocean Beach Nord : 135 000 à 205 000 $"
+    },
+    {
+     "k": "3",
+     "v": "<b>Fleeca</b> Downtown : 100 000 à 150 000 $"
+    },
+    {
+     "k": "4",
+     "v": "<b>Shorefront</b> Ocean Beach : 95 000 à 140 000 $"
+    }
+   ],
+   "next": "8 COFFRES EN TOUT · LA FUITE EN SLIDE 4 →"
+  },
+  {
+   "type": "steps",
+   "tag": "Mission",
+   "step": "Étape 2/2",
+   "title": "La <g>fuite</g>",
+   "points": [
+    {
+     "icon": "cash",
+     "text": "Ramasse <b>les billets marqués</b> sur le chariot et dans les coffres individuels."
+    },
+    {
+     "icon": "star",
+     "text": "<b>4 étoiles</b> d'un coup : il n'y a pas de porte de derrière, sors par devant."
+    },
+    {
+     "icon": "car",
+     "text": "<b>Change de voiture</b> dans un parking pour semer la police."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "Tu fais quoi avec <g>205 000 $</g> ?",
+   "comment": "Réponds en un mot : voiture, garage ou armes ?",
+   "share": "Envoie-le à ton pote toujours fauché à Key Lento",
+   "rdv": "Une astuce GTA 6 chaque jour à 10 h"
+  }
+ ]
+}
